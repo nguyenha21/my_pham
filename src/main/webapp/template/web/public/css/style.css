@@ -1,0 +1,136 @@
+.btn-bts {
+}
+
+.container {
+  max-width: 1200px;
+  position: relative;
+}
+
+*/
+.box-none-card a:hover {
+  color: white;
+}
+
+.imgth {
+  display: block;
+  margin: 10px;
+  padding: 10px 25px;
+  border: 1px solid #ddd;
+}
+
+/**/
+.ul-menu li:last-child {
+  margin-bottom: inherit;
+}
+
+.ul-mega li:hover>.ul-menu {
+  display: block;
+}
+
+.li-parent-first:hover > .ul-menu-lagi {
+  display: block;
+}
+
+.ul-menu-lagi li:hover > ul {
+  display: block;
+}
+
+.ul-menu li.li-parent:hover>.out-menu {
+  visibility: visible;
+  top: 50px;
+}
+
+/**/
+.addshow {
+  display: block;
+}
+
+/**/
+.box-Sform .my-form {
+  font-size: 14px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  padding: 6px 25px 6px 7px;
+  height: 40px;
+  border-color: #eee;
+  color: #777;
+}
+
+.box-Sform .btn-search {
+  border-top-left-radius: 0;
+  border: 1px solid #eee;
+  height: 40px;
+  padding: 5px 10px;
+  border-bottom-left-radius: 0;
+  color: /*#eb6090; */#4eaf4e;
+  width: 40px;
+}
+
+.box-Sform .btn-search:hover {
+  color: black;
+}
+
+/**/
+.row .box-products-category {
+  height: 585px;
+}
+
+.pd-box {
+  background-color: white;
+}
+
+/*.pd-box .box-images {
+    max-height: 189px;
+}*/
+.pd-box .box-images img {
+  max-height: 188.5px;
+}
+
+/**/
+
+/*phân trang*/
+.pagination {
+  font-size: 14px;
+  width: 90%;
+  margin: 0px auto 30px auto;
+}
+
+.pagination a {
+  padding: 6px 10px;
+  color: white;
+}
+
+.pagination .page {
+  float: right;
+}
+
+.pagination .page-item {
+  border: 1px solid #ccc;
+  color: white;
+  border-radius: 5px;
+  background-color: #459429;
+}
+
+.pagination .page-item i {
+  color: white;
+}
+
+.pagination .page-item:hover {
+  background-color: #459429;
+  color: white;
+}
+
+.pagination .page-item:hover i {
+  color: white;
+}
+
+.pagination .current-page {
+  border: 1px solid #ccc;
+  color: white;
+  background-color: white;
+}
+
+.btn-addlike {
+  display: block;
+}
