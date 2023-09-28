@@ -11,7 +11,7 @@ import nguyenhawolf.entity.SanPham;
 import nguyenhawolf.mapper.MpSanpham;
 
 @Repository
-public class HomeDao {
+public class SanPhamDao {
 	@Autowired
 	public JdbcTemplate _jdbcTemplate;
 

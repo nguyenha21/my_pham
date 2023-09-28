@@ -1,12 +1,12 @@
 package nguyenhawolf.entity;
 
-public class GioiThieuSanPham {
+public class GTSP {
 	private int stt;
 	private int maSP;
 	private String khaiQuat;
 	private String noiDung;
 	private float danhGia;
-	public GioiThieuSanPham() {
+	public GTSP() {
 		super();
 	}
 	public int getStt() {

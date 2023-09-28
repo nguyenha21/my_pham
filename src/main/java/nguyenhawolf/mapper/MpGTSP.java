@@ -5,13 +5,13 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import nguyenhawolf.entity.GioiThieuSanPham;
+import nguyenhawolf.entity.GTSP;
 
-public class MpGTSP implements RowMapper<GioiThieuSanPham>{
+public class MpGTSP implements RowMapper<GTSP>{
 
 	@Override
-	public GioiThieuSanPham mapRow(ResultSet rs, int rowNum) throws SQLException {
-		GioiThieuSanPham gioiThieuSP = new GioiThieuSanPham();
+	public GTSP mapRow(ResultSet rs, int rowNum) throws SQLException {
+		GTSP gioiThieuSP = new GTSP();
         gioiThieuSP.setStt(rs.getInt("stt"));
         gioiThieuSP.setMaSP(rs.getInt("ma_sp"));
         gioiThieuSP.setKhaiQuat(rs.getString("khai_quat"));

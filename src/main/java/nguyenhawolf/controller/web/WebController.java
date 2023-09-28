@@ -9,12 +9,13 @@ import nguyenhawolf.service.web.HomeServiceImpl;
 @Controller(value = "webController")
 public class WebController {
 	@Autowired
-	public HomeServiceImpl homeImpl ;
+	public HomeServiceImpl homeServiceImpl ;
 	@RequestMapping(value = { "/", "/trang-chu" })
 	
 		public ModelAndView homePage() {
 			ModelAndView mav = new ModelAndView("web/main_trang_chu");
-			mav.addObject("sanpham",homeImpl.GetSanpham());
+			mav.addObject("sanpham",homeServiceImpl.GetSanpham());
+			mav.addObject("gtsp",homeServiceImpl.GetAll());
 			return mav;
 		}
 	

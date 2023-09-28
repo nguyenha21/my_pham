@@ -5,14 +5,21 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import nguyenhawolf.dao.HomeDao;
+import nguyenhawolf.dao.GtspDao;
+import nguyenhawolf.dao.SanPhamDao;
+import nguyenhawolf.entity.GTSP;
 import nguyenhawolf.entity.SanPham;
 @Service
 public class HomeServiceImpl implements IHomeService{
 	@Autowired
-	private HomeDao homeDao;
+	private SanPhamDao sanPhamDao;
+	@Autowired
+	private GtspDao gtspDao;
 	public List<SanPham> GetSanpham() {
-		return homeDao.GetSanpham();
+		return sanPhamDao.GetSanpham();
+	}
+	public List<GTSP> GetAll() {
+		return gtspDao.GetAll();
 	}
 
 }

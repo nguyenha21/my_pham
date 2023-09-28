@@ -23,6 +23,7 @@
 </head>
 <body>
 <h1>${sanpham.size() }</h1>
+<h2>${gtsp.size() } </h2>
     <main role="main" class="pb-3">
         <!-- slideshow -->
         <div class="container">
