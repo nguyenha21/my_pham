@@ -130,8 +130,7 @@
 					<div class="col-lg-12">
 						<div class="box-products-category">
 							<div class="head-box-category">
-								<a href="" class="left-head"> <img src="./img/sh11-128.png"
-									alt="type icon">
+								<a href="" class="left-head"> <img src=" <c:url value='/template/img/sh11-128.png'/>" alt="type icon">
 									<h2>TOP BÁN CHẠY</h2> <i class="fa fa-angle-right"
 									aria-hidden="true"></i>
 								</a>
@@ -191,7 +190,7 @@
 						<div class="box-products-category">
 							<div class="head-box-category">
 								<a href="" class="left-head"> <img alt="Trang Điểm Icon"
-									class="lazy" src="./img/trangdiem.png" style="">
+									class="lazy" src="<c:url value='/template/img/trangdiem.png'/>" style="">
 									<h2>Trang Điểm</h2> <i class="fa fa-angle-right"
 									aria-hidden="true"></i>
 								</a>
@@ -583,7 +582,7 @@
 						<div class="box-products-category">
 							<div class="head-box-category">
 								<a href="" class="left-head"> <img alt="Chăm Sóc Da Icon"
-									class="lazy" src="./img/chamsocda.png" style="">
+									class="lazy" src="<c:url value='/template/img/chamsocda.png'/>" style="">
 									<h2>Chăm Sóc Da</h2> <i class="fa fa-angle-right"
 									aria-hidden="true"></i>
 								</a>

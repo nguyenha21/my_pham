@@ -21,5 +21,17 @@ public class SanPhamDao {
 		list = _jdbcTemplate.query(sql, new MpSanpham());
 		return list;
 	}
+	public List<SanPham> GetSanphamBanchay() {
+		List<SanPham> list = new ArrayList<SanPham>();
+		String sql = "SELECT * FROM sanpham LIMIT 12";
+		list = _jdbcTemplate.query(sql, new MpSanpham());
+		return list;
+	}
+	public List<SanPham> GetSanphamDanhmuc() {
+		List<SanPham> list = new ArrayList<SanPham>();
+		String sql = "SELECT * FROM sanpham LIMIT 12";
+		list = _jdbcTemplate.query(sql, new MpSanpham());
+		return list;
+	}
 
 }
