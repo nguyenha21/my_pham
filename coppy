@@ -1,0 +1,11 @@
+  <link href="<c:url value='/template/web/'/>" rel="stylesheet" type="text/css">
+   <script src="<c:url value='/template/web/'/>"></script>
+   <c:url value='/template/images/products/24-07-2020/logo.png'/>
+   images/products/24-07-2020/6.png
+
+
+   format giá 
+   <fmt:formatNumber value="${}" type="currency" currencySymbol="₫" />
+
+   format ảnh
+   <c:url value="/template/${topbanchay.img }">

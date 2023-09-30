@@ -7,19 +7,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import nguyenhawolf.entity.SanPham;
-import nguyenhawolf.mapper.MpSanpham;
-
+import nguyenhawolf.entity.ThongTinWeb;
+import nguyenhawolf.mapper.MpThongtinweb;
 @Repository
-public class SanPhamDao {
+public class ThongtinwebDao {
 	@Autowired
 	public JdbcTemplate _jdbcTemplate;
-	
-	public List<SanPham> GetSanphamRandom() {
-		List<SanPham> list = new ArrayList<SanPham>();
-		String sql = "SELECT * FROM sanpham LIMIT 12";
-		list = _jdbcTemplate.query(sql, new MpSanpham());
+
+	public List<ThongTinWeb> GetThongtinweb() {
+		List<ThongTinWeb> list = new ArrayList<ThongTinWeb>();
+		String sql = "SELECT * FROM thongtinweb";
+		list = _jdbcTemplate.query(sql, new MpThongtinweb());
 		return list;
 	}
-
 }

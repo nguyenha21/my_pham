@@ -14,8 +14,9 @@ public class WebController {
 	
 		public ModelAndView homePage() {
 			ModelAndView mav = new ModelAndView("web/main_trang_chu");
-			mav.addObject("sanpham",homeServiceImpl.GetSanpham());
-			mav.addObject("gtsp",homeServiceImpl.GetAll());
+			mav.addObject("sanphamrandom",homeServiceImpl.GetSanphamRandom());
+			mav.addObject("thongtinweb",homeServiceImpl.GetThongtinweb());
+			mav.addObject("imgshow",homeServiceImpl.GetImgshowSlide());
 			return mav;
 		}
 	
