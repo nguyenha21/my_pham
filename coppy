@@ -8,4 +8,11 @@
    <fmt:formatNumber value="${}" type="currency" currencySymbol="₫" />
 
    format ảnh
-   <c:url value="/template/${topbanchay.img }">
+   <c:url value="/template/${topbanchay.img }"></c:url>
+
+
+   public JdbcTemplate _jdbcTemplate;
+    public List<ThuongHieu> GetThuonghieu() {
+        String sql = "SELECT * FROM thuonghieu";
+        return _jdbcTemplate.query(sql, new MpThuonghieu());
+    }

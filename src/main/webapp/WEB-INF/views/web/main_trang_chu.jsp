@@ -6,34 +6,7 @@
 <head>
 <title>Beauty shop mỹ phẩm chính hãng</title>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="public/css/site.min.css">
-<link rel="stylesheet" type="text/css" href="public/css/style.css">
-<script type="text/javascript" src="public/js/js.js"></script>
-<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-	crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	crossorigin="anonymous"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	crossorigin="anonymous"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-	crossorigin="anonymous"></script>
-<link rel="stylesheet"
-	href="public/owlcarousel/assets/owl.carousel.min.css">
-<link rel="stylesheet"
-	href="public/owlcarousel/assets/owl.theme.default.min.css">
-<script type="text/javascript" src="public/js/jquery-3.5.1.min.js"></script>
-<script src="public/owlcarousel/owl.carousel.min.js"></script>
+
 
 </head>
 <body>
@@ -122,7 +95,26 @@
 
 			</div>
 		</div>
-
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+		loop : false,
+		margin : 10,
+		nav : false,
+		responsive : {
+			0 : {
+				items : 2
+			},
+			600 : {
+				items : 4
+			},
+			1000 : {
+				items : 6
+			}
+		}
+	});
+});
+</script>
 		<!-- Top  bán chạy -->
 		<div class="back-gray pad-30">
 			<div class="container">
@@ -140,7 +132,7 @@
 								<div class="clr"></div>
 							</div>
 							<div class="body-box-category">
-							<c:forEach var="topbanchay" items="${sanphamrandom }">
+							<c:forEach var="topbanchay" items="${sanphambanchay }">
 								<!-- Bắt đàu sản phẩm -->
 								<div class="col-2-ct">
 									<div class="pd-box pd-box-category">
@@ -965,42 +957,13 @@
 						</div>
 						<div class="body-box">
 							<div class="owl-carousel owl-theme">
+						
+							<c:forEach var="thuonghieu" items="${thuonghieu }">
 								<div class="item imgth">
-									<img src="images/products/30-07-2020/city-color.png">
+									<img src="<c:url value='/template/${thuonghieu.img }'></c:url>">
 								</div>
-								<div class="item imgth">
-									<img src="images/products/30-07-2020/3wc.png">
-								</div>
-								<div class="item imgth">
-									<img src="images/products/30-07-2020/w7.png">
-								</div>
-								<div class="item imgth">
-									<img src="images/products/30-07-2020/lanopearl.png">
-								</div>
-								<div class="item imgth">
-									<img src="images/products/30-07-2020/benton.png">
-								</div>
-								<div class="item imgth">
-									<img src="images/products/30-07-2020/kose.png">
-								</div>
-								<div class="item imgth">
-									<img src="images/products/30-07-2020/ohui.png">
-								</div>
-								<div class="item imgth">
-									<img src="images/products/30-07-2020/Capture.png">
-								</div>
-								<div class="item imgth">
-									<img src="images/products/30-07-2020/3ce(1).png">
-								</div>
-								<div class="item imgth">
-									<img src="images/products/30-07-2020/la-girl.png">
-								</div>
-								<div class="item imgth">
-									<img src="images/products/30-07-2020/etude-house.jpg">
-								</div>
-								<div class="item imgth">
-									<img src="images/products/30-07-2020/evoluderm.png">
-								</div>
+							</c:forEach>
+							
 
 							</div>
 						</div>
@@ -1026,22 +989,5 @@
 		}
 	}
 </script>
-<script type="text/javascript">
-	$('.owl-carousel').owlCarousel({
-		loop : false,
-		margin : 10,
-		nav : false,
-		responsive : {
-			0 : {
-				items : 2
-			},
-			600 : {
-				items : 3
-			},
-			1000 : {
-				items : 6
-			}
-		}
-	})
-</script>
+
 </html>

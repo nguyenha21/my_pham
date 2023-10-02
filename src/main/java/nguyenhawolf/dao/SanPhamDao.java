@@ -23,13 +23,13 @@ public class SanPhamDao {
 	}
 	public List<SanPham> GetSanphamBanchay() {
 		List<SanPham> list = new ArrayList<SanPham>();
-		String sql = "SELECT * FROM sanpham LIMIT 12";
+		String sql = "SELECT * FROM sanpham ORDER BY sl_da_ban DESC LIMIT 12";
 		list = _jdbcTemplate.query(sql, new MpSanpham());
 		return list;
 	}
-	public List<SanPham> GetSanphamDanhmuc() {
+	public List<SanPham> GetSanphamDanhmuc(int ma_dm) {
 		List<SanPham> list = new ArrayList<SanPham>();
-		String sql = "SELECT * FROM sanpham LIMIT 12";
+		String sql = "SELECT * FROM sanpham WHERE ma_Dm = ? LIMIT 12";
 		list = _jdbcTemplate.query(sql, new MpSanpham());
 		return list;
 	}

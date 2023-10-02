@@ -4,76 +4,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
-</head>
-<body>
-	<DOCTYPE html>
-	<html>
-<head>
 <title>Beauty shop mỹ phẩm chính hãng</title>
 <meta charset="utf-8">
-<link href="<c:url value='/template/web/public/css/site.min.css'/>"
-	rel="stylesheet" type="text/css">
-<link href="<c:url value='/template/web/public/css/style.css'/>"
-	rel="stylesheet" type="text/css">
-<script src="<c:url value='/template/web/public/js/js.js'/>"></script>
-<script src="<c:url value='/template/web/public/css/bootstrap.css'/>"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-	crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	crossorigin="anonymous"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	crossorigin="anonymous"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-	crossorigin="anonymous"></script>
-<link
-	href="<c:url value='/template/web/public/owlcarousel/assets/owl.carousel.min.css'/>"
-	rel="stylesheet" type="text/css">
-<link
-	href="<c:url value='/template/web/public/owlcarousel/assets/owl.theme.default.min.css'/>"
-	rel="stylesheet" type="text/css">
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script
-	src="<c:url value='/template/web/public/owlcarousel/owl.carousel.min.js'/>"></script>
-<style type="text/css">
-.box-Sform .btn-search {
-	border-top-left-radius: 0;
-	border: 1px solid #eee;
-	height: 40px;
-	padding: 5px 10px;
-	border-bottom-left-radius: 0;
-	color: #4eaf4e;
-	width: 40px;
-}
-
-.box-Sform .my-form {
-	font-size: 14px;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-	border-right: none;
-	padding: 6px 25px 6px 7px;
-	height: 40px;
-	border-color: #eee;
-	color: #777;
-}
-
-.box-Sform .btn-search:hover {
-	color: black;
-}
-</style>
+ 	
 
 </head>
 <body>
+
 	<header>
 		<div class="head-first">
 			<div class="container">
@@ -112,7 +49,7 @@
 										<div class="item">
 											<a href="?page=product&id=135"
 												title="Dưỡng Mi Eveline Cosmetics Lash Therapy"> <img
-												src="images/products/20-08-2020/a1-31012019112847.jpg"
+												src="<c:url value='/template/images/products/20-08-2020/a1-31012019112847.jpg'/>"
 												alt="" class="img-reponsive">
 											</a>
 										</div>
@@ -430,7 +367,7 @@
 											<div
 												class="col-lg-3 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs">
 												<div>
-													<img src="img/girl1.jpg" alt="" class="img-reponsive">
+													<img src="<c:url value='/template/img/girl1.jpg'/>" alt="" class="img-reponsive">
 												</div>
 											</div>
 										</div>
@@ -494,7 +431,7 @@
 											<div
 												class="col-lg-3 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs">
 												<div>
-													<img src="./img/girl2.jpg" alt="" class="img-reponsive">
+													<img src="<c:url value='/template/img/girl2.jpg'/>" alt="" class="img-reponsive">
 												</div>
 											</div>
 										</div>

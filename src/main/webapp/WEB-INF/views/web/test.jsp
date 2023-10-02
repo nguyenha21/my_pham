@@ -1,13 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ include file="/common/taglib.jsp"%>
-
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Trang chủ</title>
-	<link rel="stylesheet" type="text/css" href="<c:url value='/template/web/public/css/site.min.css'/>">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="<c:url value='/template/web/public/css/site.min.css'/>">
        <link rel="stylesheet" type="text/css" href="<c:url value='/template/web/public/css/style.css'/>">
        <script type="text/javascript" src="<c:url value='/template/web/public/js/js.js'/>"></script>
        <link rel="stylesheet" type="text/css" href="<c:url value='/template/web/public/css/bootstrap.css'/>">
@@ -21,6 +19,7 @@
        <link rel="stylesheet" href="<c:url value='/template/web/public/owlcarousel/assets/owl.theme.default.min.css'/>">
        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
        <script src="<c:url value='/template/web/public/owlcarousel/owl.carousel.min.js'/>"></script>
+	
 	
 <style type="text/css">
 .box-Sform .btn-search {
@@ -48,10 +47,59 @@
 	color: black;
 }
 </style>
+
 </head>
 <body>
-	<%@ include file="/common/web/header.jsp"%>
-	<dec:body />
-	<%@ include file="/common/web/footer.jsp"%>
+<div class="box-products">
+						<div class="head-box">
+							<div class="title-box">
+								<h2>
+									<a href=""> SẢN PHẨM MỚI VỀ </a>
+									
+								</h2>
+							</div>
+							<div class="clr"></div>
+						</div>
+						<div class="body-box">
+							<div class="owl-carousel owl-theme">
+							<c:forEach var="spmoive" items="${sanphamrandom }">
+								<div class="item">
+									<div class="pd-box ">
+										<div class="box-images">
+											<a href="./?page=product&id=${spmoive.ma_Sp }"> <img data-src="" alt=""
+												class="img-reponsive owl-lazy "
+												src="<c:url value="/template/${spmoive.img }"></c:url>"
+												style="opacity: 1;">
+											</a>
+											<button type="button" onclick="load_cart(${spmoive.ma_Sp })"
+												class="btn-addlike ">
+												<i class="fa fa-cart-plus"></i>
+											</button>
+											<div class="sale-off hide">
+												0%<br>OFF
+											</div>
+										</div>
+										<div class="box-content">
+											<h3>
+												<a href="./?page=product&id=${spmoive.ma_Sp }">${spmoive.ten_Sp }</a>
+											</h3>
+											<div>
+												<span class="price-drop">${spmoive.gia_Ban }₫</span> <span
+													class="price ">${spmoive.gia_Thi_Truong }₫</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</c:forEach>
+							</div>
+						</div>
+
+					</div>
+					<script type="text/javascript">
+					$(document).ready(function(){
+						  $(".owl-carousel").owlCarousel();
+						});
+					</script>
 </body>
 </html>

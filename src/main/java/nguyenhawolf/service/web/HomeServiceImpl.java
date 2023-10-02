@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 import nguyenhawolf.dao.GtspDao;
 import nguyenhawolf.dao.ImgshowDao;
 import nguyenhawolf.dao.SanPhamDao;
-import nguyenhawolf.dao.ThongtinwebDao;
+import nguyenhawolf.dao.ThuonghieuDao;
 import nguyenhawolf.entity.GTSP;
 import nguyenhawolf.entity.ImgShow;
 import nguyenhawolf.entity.SanPham;
-import nguyenhawolf.entity.ThongTinWeb;
+import nguyenhawolf.entity.ThuongHieu;
 @Service
 public class HomeServiceImpl implements IHomeService{
 	@Autowired
@@ -20,18 +20,27 @@ public class HomeServiceImpl implements IHomeService{
 	@Autowired
 	private GtspDao gtspDao;
 	@Autowired
-	private ThongtinwebDao thongtinwebDao;
+	private ImgshowDao imgshowDao; 
+	
 	@Autowired
-	private ImgshowDao imgshowDao;
+	private ThuonghieuDao thuonghieuDao;
+	
 	public List<SanPham> GetSanphamRandom() {
 		return sanPhamDao.GetSanphamRandom();
 	}
+	
 	public List<GTSP> GetAll() {
 		return gtspDao.GetAll();
 	}
-	public List<ThongTinWeb> GetThongtinweb() {
-		return thongtinwebDao.GetThongtinweb();
+	
+	public List<SanPham> GetSanphamBanchay() {
+		return sanPhamDao.GetSanphamBanchay();
 	}
+	
+	public List<ThuongHieu> GetThuonghieu() {
+		return thuonghieuDao.GetThuonghieu();
+	}
+	
 	public List<ImgShow> GetImgshowSlide() {
 		return imgshowDao.GetImgshowSlide();
 	}
