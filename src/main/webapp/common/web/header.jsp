@@ -305,7 +305,14 @@
 									</ul></li>
 
 								<!-- sádgfdas -->
-								<li class="li-parent"><a href="?page=category&id=1"
+								<li class="li-parent">
+								<!-- a href="?page=category&id=1"
+									class="a-parent"> Trang Điểm <i
+										class="fa fa-angle-down hidden-xs hidden-sm"
+										aria-hidden="true"></i> <i class="fa fa-angle-right hidden-md"
+										aria-hidden="true"></i>
+								</a> -->
+								<a href='<c:url value= "/category/1"></c:url>'
 									class="a-parent"> Trang Điểm <i
 										class="fa fa-angle-down hidden-xs hidden-sm"
 										aria-hidden="true"></i> <i class="fa fa-angle-right hidden-md"

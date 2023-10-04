@@ -16,3 +16,16 @@
         String sql = "SELECT * FROM thuonghieu";
         return _jdbcTemplate.query(sql, new MpThuonghieu());
     }
+
+
+    WHERE sanpham.sl_trong_kho > 0 AND sanpham.hien_thi = 1
+
+    <fmt:formatNumber value="${topbanchay.gia_Ban}" type="currency" currencySymbol="₫" />
+
+    <fmt:formatNumber value="${topbanchay.gia_Thi_Truong}" type="currency" currencySymbol="₫" />
+
+    <c:forEach var="chitietsanpham" items="${chitietsanpham }">
+        /template/${chitietsanpham.img }
+    </c:forEach>
+    <c:forEach var="chitietsanpham" items="${chitietsanpham }">
+    <fmt:formatNumber value="${chitietsanpham.gia_Thi_Truong}" type="currency" currencySymbol="₫" /></c:forEach>

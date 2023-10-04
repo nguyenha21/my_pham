@@ -57,11 +57,11 @@
 						</div>
 						<div class="body-box">
 							<div class="owl-carousel owl-theme">
-							<c:forEach var="spmoive" items="${sanphamrandom }">
+							<c:forEach var="spmoive" items="${sanphammoive }">
 								<div class="item">
 									<div class="pd-box ">
 										<div class="box-images">
-											<a href="./?page=product&id=${spmoive.ma_Sp }"> <img data-src="" alt=""
+											<a href="<c:url value= "/product/${spmoive.ma_Sp }"></c:url>"> <img data-src="" alt=""
 												class="img-reponsive owl-lazy "
 												src="<c:url value="/template/${spmoive.img }"></c:url>"
 												style="opacity: 1;">
@@ -79,8 +79,8 @@
 												<a href="./?page=product&id=${spmoive.ma_Sp }">${spmoive.ten_Sp }</a>
 											</h3>
 											<div>
-												<span class="price-drop">${spmoive.gia_Ban }₫</span> <span
-													class="price ">${spmoive.gia_Thi_Truong }₫</span>
+												<span class="price-drop"><fmt:formatNumber value="${spmoive.gia_Ban}" type="currency" currencySymbol="₫" /></span> <span
+													class="price "><fmt:formatNumber value="${spmoive.gia_Ban}" type="currency" currencySymbol="₫" /></span>
 											</div>
 										</div>
 									</div>
@@ -189,16 +189,17 @@ $(document).ready(function(){
 								<div class="clr"></div>
 							</div>
 							<div class="body-box-category">
+							<c:forEach var="sanphamtrangdiem" items="${sanphamtrangdiem }">
 								<!-- Bắt đầu sp -->
 								<div class="col-2-ct">
 									<div class="pd-box pd-box-category">
 										<div class="box-images">
-											<a href="?page=product&id=73"
+											<a href="?page=product&id=${sanphamtrangdiem.ma_Sp }"
 												title="Tạo Khối Dạng Phấn Too Cool For School ArtClass">
-												<img src="images/products/19-08-2020/a6-19022019022936.jpg"
+												<img src="<c:url value="/template/${sanphamtrangdiem.img }"></c:url>"
 												alt="" class="img-reponsive lazy ">
 											</a>
-											<button type="button" onclick="load_cart(73)"
+											<button type="button" onclick="load_cart(${sanphamtrangdiem.ma_Sp})"
 												class="btn-addlike ">
 												<i class="fa fa-cart-plus"></i>
 											</button>
@@ -208,349 +209,19 @@ $(document).ready(function(){
 										</div>
 										<div class="box-content">
 											<h3>
-												<a href="?page=product&id=73">Tạo Khối Dạng Phấn Too
-													Cool For School ArtClass</a>
+												<a href="?page=product&id=${sanphamtrangdiem.ma_Sp}">${sanphamtrangdiem.ten_Sp }</a>
 											</h3>
 											<div>
-												<span class="price-drop">250,000₫</span> <span
-													class="price ">322,000₫</span>
+												<span class="price-drop"><fmt:formatNumber value="${sanphamtrangdiem.gia_Ban}" type="currency" currencySymbol="₫" /></span> <span
+													class="price "><fmt:formatNumber value="${sanphamtrangdiem.gia_Thi_Truong}" type="currency" currencySymbol="₫" /></span>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=29"
-												title="Kem Nền Kiềm Dầu The Saem Saemmul Perfect Pore">
-												<img src="images/products/21-07-2020/a0-20042019111305.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(29)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=29">Kem Nền Kiềm Dầu The Saem
-													Saemmul Perfect Pore</a>
-											</h3>
-											<div>
-												<span class="price-drop">85,000₫</span> <span class="price ">99,450₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=9"
-												title="Bảng Hiệu Chỉnh Màu Da Essence"> <img
-												src="images/products/21-07-2020/avatar-sp-web11-1-29082019112933.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(9)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=9">Bảng Hiệu Chỉnh Màu Da
-													Essence</a>
-											</h3>
-											<div>
-												<span class="price-drop">110,000₫</span> <span
-													class="price ">126,500₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=70"
-												title="Phấn Má + Bắt Sáng Sivanna Colors Glower Cheek">
-												<img
-												src="images/products/21-07-2020/13243565-10102019100627.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(70)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=70">Phấn Má + Bắt Sáng Sivanna
-													Colors Glower Cheek</a>
-											</h3>
-											<div>
-												<span class="price-drop">150,000₫</span> <span
-													class="price ">174,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=59"
-												title="Phấn Phủ MAC Studio Fix Powder Plus Foundation">
-												<img
-												src="images/products/21-07-2020/phan-phu-22052020092451.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(59)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=59">Phấn Phủ MAC Studio Fix
-													Powder Plus Foundation</a>
-											</h3>
-											<div>
-												<span class="price-drop">720,000₫</span> <span
-													class="price ">856,800₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=57"
-												title="Phấn Rôm Gohnson's Baby Powder"> <img
-												src="images/products/21-07-2020/45gr-real-26092019120207.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(57)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=57">Phấn Rôm Gohnson's Baby
-													Powder</a>
-											</h3>
-											<div>
-												<span class="price-drop">15,000₫</span> <span class="price ">16,900₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=2"
-												title="Che Khuyết Điểm Tạo Khối NYX Correcting"> <img
-												src="images/products/21-07-2020/kem-tao-khoi-che-khuyet-diem-Nyx-Eyeshadow-Nyx-Conceal-Correct-Contour-Palette-Beauty-garden.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(2)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=2">Che Khuyết Điểm Tạo
-													Khối NYX Correcting</a>
-											</h3>
-											<div>
-												<span class="price-drop">190,000₫</span> <span
-													class="price ">241,500₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=15"
-												title="Phấn Nước April Skin Magic Essence"> <img
-												src="images/products/21-07-2020/aprilskin-30102019104456.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(15)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=15">Phấn Nước April Skin Magic
-													Essence</a>
-											</h3>
-											<div>
-												<span class="price-drop">330,000₫</span> <span
-													class="price ">364,800₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=44"
-												title="Kem Lót Kiềm Dầu Catrice Poreless Blur Primer"> <img
-												src="images/products/21-07-2020/a1-10012019115801.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(44)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=44">Kem Lót Kiềm Dầu Catrice
-													Poreless Blur Primer</a>
-											</h3>
-											<div>
-												<span class="price-drop">150,000₫</span> <span
-													class="price ">171,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=6"
-												title="Kem Che Khuyết Điểm Bắt Sáng E.L.F"> <img
-												src="images/products/21-07-2020/avatar-sp-web11-1-recovered-recovered-recovered-recovered-recovered-recovered-19032020114148.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(6)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=6">Kem Che Khuyết Điểm Bắt
-													Sáng E.L.F</a>
-											</h3>
-											<div>
-												<span class="price-drop">130,000₫</span> <span
-													class="price ">146,900₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=33"
-												title="Kem Nền Face It Power Perfection BB SPF 37/PA++">
-												<img
-												src="images/products/21-07-2020/kem-nen-Face-It-Power-Perfection-BB-Cream-SPF-37-PA-beauty-garden-1.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(33)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=33">Kem Nền Face It Power
-													Perfection BB SPF 37/PA++</a>
-											</h3>
-											<div>
-												<span class="price-drop">350,000₫</span> <span
-													class="price ">442,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=38"
-												title="Kem Nền Loreal Paris Infallible Stay Fresh 24h">
-												<img src="images/products/21-07-2020/a1-29112018105908.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(38)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=38">Kem Nền Loreal Paris
-													Infallible Stay Fresh 24h</a>
-											</h3>
-											<div>
-												<span class="price-drop">250,000₫</span> <span
-													class="price ">250,800₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-
+							</c:forEach>
+								
+								
 
 
 
@@ -581,16 +252,17 @@ $(document).ready(function(){
 								<div class="clr"></div>
 							</div>
 							<div class="body-box-category">
+								<c:forEach var="sanphamchamsocda" items="${sanphamchamsocda }">
 								<!-- Bắt đầu sp -->
 								<div class="col-2-ct">
 									<div class="pd-box pd-box-category">
 										<div class="box-images">
-											<a href="?page=product&id=119"
-												title="Mặt Nạ Kiehls Calendula Aloe"> <img
-												src="images/products/20-08-2020/avatar-sp-web11-recovered-recovered-recovered-recovered-recovered-07052020093815.jpg"
+											<a href="?page=product&id=${sanphamchamsocda.ma_Sp }"
+												title="Tạo Khối Dạng Phấn Too Cool For School ArtClass">
+												<img src="<c:url value="/template/${sanphamchamsocda.img }"></c:url>"
 												alt="" class="img-reponsive lazy ">
 											</a>
-											<button type="button" onclick="load_cart(119)"
+											<button type="button" onclick="load_cart(${sanphamchamsocda.ma_Sp})"
 												class="btn-addlike ">
 												<i class="fa fa-cart-plus"></i>
 											</button>
@@ -600,347 +272,18 @@ $(document).ready(function(){
 										</div>
 										<div class="box-content">
 											<h3>
-												<a href="?page=product&id=119">Mặt Nạ Kiehls Calendula
-													Aloe</a>
+												<a href="?page=product&id=${sanphamchamsocda.ma_Sp}">${sanphamchamsocda.ten_Sp }</a>
 											</h3>
 											<div>
-												<span class="price-drop">30,000₫</span> <span class="price ">39,000₫</span>
+												<span class="price-drop"><fmt:formatNumber value="${sanphamchamsocda.gia_Ban}" type="currency" currencySymbol="₫" /></span> <span
+													class="price "><fmt:formatNumber value="${sanphamchamsocda.gia_Thi_Truong}" type="currency" currencySymbol="₫" /></span>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=125"
-												title="Sữa Rửa Mặt Innisfree Jeju Volcanic"> <img
-												src="images/products/20-08-2020/forest-for-men-shaving-cleansing-foam-2-200x200-15052020035135.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(125)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=125">Sữa Rửa Mặt Innisfree
-													Jeju Volcanic</a>
-											</h3>
-											<div>
-												<span class="price-drop">180,000₫</span> <span
-													class="price ">207,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=123"
-												title="Mặt Nạ Pink Racoony Hydro Gel Eye & Cheek Patch">
-												<img
-												src="images/products/20-08-2020/mat-na-Pink-Racoony-Hydro-Gel-Eye-Cheek-Patch-a1.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(123)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=123">Mặt Nạ Pink Racoony Hydro
-													Gel Eye & Cheek Patch</a>
-											</h3>
-											<div>
-												<span class="price-drop">270,000₫</span> <span
-													class="price ">307,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=143"
-												title="Nước Cân Bằng Hatomugi The Lotion Moisturizing">
-												<img
-												src="images/products/20-08-2020/avatar-sp-web11-recovered-recovered-recovered-recovered-21042020100344.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(143)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=143">Nước Cân Bằng Hatomugi
-													The Lotion Moisturizing</a>
-											</h3>
-											<div>
-												<span class="price-drop">190,000₫</span> <span
-													class="price ">224,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=130"
-												title="Tinh Chất Tái Tạo Da So'Natural Red Peel Tingle">
-												<img src="images/products/20-08-2020/a1-14052019093821.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(130)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=130">Tinh Chất Tái Tạo Da
-													So'Natural Red Peel Tingle</a>
-											</h3>
-											<div>
-												<span class="price-drop">250,000₫</span> <span
-													class="price ">310,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=146"
-												title="Kem Chống Nắng Nature Republic Sun Block Daily">
-												<img
-												src="images/products/20-08-2020/dang-kem-2-21042020013528.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(146)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=146">Kem Chống Nắng Nature
-													Republic Sun Block Daily</a>
-											</h3>
-											<div>
-												<span class="price-drop">150,000₫</span> <span
-													class="price ">199,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=113"
-												title="Mặt Nạ Đất Sét Kiềm Dầu Laikou Black Pearl"> <img
-												src="images/products/20-08-2020/mask-dat-set-18112019041048.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(113)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=113">Mặt Nạ Đất Sét Kiềm Dầu
-													Laikou Black Pearl</a>
-											</h3>
-											<div>
-												<span class="price-drop">50,000₫</span> <span class="price ">57,500₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=124"
-												title="Mặt Nạ Hoa Cúc Kiehls Calendula&Aloe 14ml"> <img
-												src="images/products/20-08-2020/a1-03012019112256.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(124)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=124">Mặt Nạ Hoa Cúc Kiehls
-													Calendula&Aloe 14ml</a>
-											</h3>
-											<div>
-												<span class="price-drop">170,000₫</span> <span
-													class="price ">253,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=129"
-												title="Tẩy Da Chết Huxley Secret Of Sahara Scrub Mask">
-												<img
-												src="images/products/20-08-2020/huxley-26112019092015.jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(129)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=129">Tẩy Da Chết Huxley Secret
-													Of Sahara Scrub Mask</a>
-											</h3>
-											<div>
-												<span class="price-drop">75,000₫</span> <span class="price ">124,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=136"
-												title="Kem Giảm Quầng Thâm Mắt Kumargic"> <img
-												src="images/products/20-08-2020/kem-tri-quang-tham-mat-kumargic-eye-beauty-garden-1 (1).jpg"
-												alt="" class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(136)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=136">Kem Giảm Quầng Thâm Mắt
-													Kumargic</a>
-											</h3>
-											<div>
-												<span class="price-drop">180,000₫</span> <span
-													class="price ">226,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=142"
-												title="Bộ Dưỡng Da Innisfree Jeju Orchid Special Kit"> <img
-												src="images/products/20-08-2020/01(12).jpg" alt=""
-												class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(142)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=142">Bộ Dưỡng Da Innisfree
-													Jeju Orchid Special Kit</a>
-											</h3>
-											<div>
-												<span class="price-drop">150,000₫</span> <span
-													class="price ">165,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
-								<!-- Bắt đầu sp -->
-								<div class="col-2-ct">
-									<div class="pd-box pd-box-category">
-										<div class="box-images">
-											<a href="?page=product&id=110"
-												title="Mặt Nạ Sủi Bột Su:m 37 White Award Bubble"> <img
-												src="images/products/20-08-2020/mat-na-sum-trang.jpg" alt=""
-												class="img-reponsive lazy ">
-											</a>
-											<button type="button" onclick="load_cart(110)"
-												class="btn-addlike ">
-												<i class="fa fa-cart-plus"></i>
-											</button>
-											<div class="sale-off hide">
-												33%<br>OFF
-											</div>
-										</div>
-										<div class="box-content">
-											<h3>
-												<a href="?page=product&id=110">Mặt Nạ Sủi Bột Su:m 37
-													White Award Bubble</a>
-											</h3>
-											<div>
-												<span class="price-drop">12,000₫</span> <span class="price ">14,000₫</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- Kết thúc -->
+							</c:forEach>
+								
 							</div>
 						</div>
 					</div>

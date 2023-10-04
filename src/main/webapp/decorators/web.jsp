@@ -7,6 +7,55 @@
 <head>
 <meta charset="UTF-8">
 <title>Trang chủ</title>
+
+<link href="<c:url value='/template/web/public/css/shopcard.css'/>" rel="stylesheet" type="text/css">
+<link href="<c:url value='/template/web/public/css/category.css'/>" rel="stylesheet" type="text/css">
+<link href="<c:url value='/template/web/public/css/easyzoom.css'/>" rel="stylesheet" type="text/css">
+<script src="<c:url value='/template/web/public/js/easyzoom.js'/>"></script>
+<style type="text/css">
+.thumbnails {
+	display: inline-block;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+.thumbnails li {
+	display: inline-block;
+	list-style-type: none;
+	float: left;
+	padding: 5px;
+}
+
+.thumbnails li a {
+	display: block;
+	text-decoration: none;
+	border: 1px solid #eee;
+}
+
+.thumbnails li a img {
+	width: 85px;
+	height: 85px;
+}
+/* <?php 
+        if (!empty($like)) {?>
+            .btn-hea{
+                background-color: #1f601f;
+                color: white;
+            }
+            
+       <?php }
+        ?> */
+.btn-hea:hover {
+	color: white;
+	background-color: #199427;
+}
+
+.btn-atc:hover {
+	background-color: #199427;
+}
+</style>
+
+
 	<link rel="stylesheet" type="text/css" href="<c:url value='/template/web/public/css/site.min.css'/>">
        <link rel="stylesheet" type="text/css" href="<c:url value='/template/web/public/css/style.css'/>">
        <script type="text/javascript" src="<c:url value='/template/web/public/js/js.js'/>"></script>
@@ -48,6 +97,7 @@
 	color: black;
 }
 </style>
+<dec:head></dec:head>
 </head>
 <body>
 	<%@ include file="/common/web/header.jsp"%>

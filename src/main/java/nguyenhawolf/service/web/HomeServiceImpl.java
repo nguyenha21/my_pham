@@ -25,8 +25,8 @@ public class HomeServiceImpl implements IHomeService{
 	@Autowired
 	private ThuonghieuDao thuonghieuDao;
 	
-	public List<SanPham> GetSanphamRandom() {
-		return sanPhamDao.GetSanphamRandom();
+	public List<SanPham> GetSanphamMoive() {
+		return sanPhamDao.GetSanphamMoive();
 	}
 	
 	public List<GTSP> GetAll() {
@@ -36,7 +36,9 @@ public class HomeServiceImpl implements IHomeService{
 	public List<SanPham> GetSanphamBanchay() {
 		return sanPhamDao.GetSanphamBanchay();
 	}
-	
+	public List<SanPham> GetSanphamDanhmuc(int ma_dm) {
+		return sanPhamDao.GetSanphamDanhmuc(ma_dm);
+	}
 	public List<ThuongHieu> GetThuonghieu() {
 		return thuonghieuDao.GetThuonghieu();
 	}

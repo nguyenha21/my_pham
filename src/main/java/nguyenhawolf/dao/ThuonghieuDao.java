@@ -7,9 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import nguyenhawolf.entity.GTSP;
 import nguyenhawolf.entity.ThuongHieu;
-import nguyenhawolf.mapper.MpGTSP;
 import nguyenhawolf.mapper.MpThuonghieu;
 
 @Repository
