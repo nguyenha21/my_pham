@@ -8,6 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import nguyenhawolf.dto.PaginatesDto;
 import nguyenhawolf.service.web.CategoryServiceImpl;
+import nguyenhawolf.service.web.HomeServiceImpl;
 import nguyenhawolf.service.web.PaginateServiceImpl;
 
 @Controller(value = "categoryController")
@@ -16,13 +17,15 @@ public class CategoryController extends BaseController{
 	public CategoryServiceImpl categoryServiceImpl;
 	@Autowired
 	public PaginateServiceImpl paginateServiceImpl;
-	
+	@Autowired
+	public HomeServiceImpl homeServiceImpl;
 	private int totalProductPage = 20;
 	
-	@RequestMapping(value ={"/category/", "/category/{ma_dm}"})
+	@RequestMapping(value ="/category/{ma_dm}")
 	public ModelAndView Category(@PathVariable String ma_dm) {
 		_mavShare.setViewName("web/main_danh_muc");
-		
+		_mavShare.addObject("danhmuc",categoryServiceImpl.GetDanhmucByID(Integer.parseInt(ma_dm)));
+		_mavShare.addObject("sanphammoive",homeServiceImpl.GetSanphamMoive());
 		int totalData = categoryServiceImpl.GetAllProductsByID(Integer.parseInt(ma_dm)).size();
 		PaginatesDto paginatesInfo = paginateServiceImpl.GetInfoPaginates(totalData, totalProductPage, 1);
 		_mavShare.addObject("idCategory",ma_dm);
@@ -36,6 +39,8 @@ public class CategoryController extends BaseController{
 	@RequestMapping(value ="/category/{ma_dm}/{currentPage}")
 	public ModelAndView Category(@PathVariable String ma_dm,@PathVariable String currentPage) {
 		_mavShare.setViewName("web/main_danh_muc");
+		_mavShare.addObject("danhmuc",categoryServiceImpl.GetDanhmucByID(Integer.parseInt(ma_dm)));
+		_mavShare.addObject("sanphammoive",homeServiceImpl.GetSanphamMoive());
 		int totalData = categoryServiceImpl.GetAllProductsByID(Integer.parseInt(ma_dm)).size();
 		PaginatesDto paginatesInfo = paginateServiceImpl.GetInfoPaginates(totalData, totalProductPage, Integer.parseInt(currentPage));
 		_mavShare.addObject("idCategory",ma_dm);

@@ -14,7 +14,7 @@ public class MpDanhmuc implements RowMapper<DanhMuc> {
 		DanhMuc danhMuc= new DanhMuc();
 		danhMuc.setMaDm(rs.getInt("ma_dm"));
 		danhMuc.setTenDm(rs.getString("ten_dm"));
-
+		danhMuc.setImg(rs.getString("img"));
 		return danhMuc;
 	}
 

@@ -4,6 +4,7 @@ public class DanhMuc {
 
 	private int maDm;
 	private String tenDm;
+	private String img;
 	public DanhMuc() {
 		super();
 	}
@@ -18,6 +19,12 @@ public class DanhMuc {
 	}
 	public void setTenDm(String tenDm) {
 		this.tenDm = tenDm;
+	}
+	public String getImg() {
+		return img;
+	}
+	public void setImg(String img) {
+		this.img = img;
 	}
 
 }

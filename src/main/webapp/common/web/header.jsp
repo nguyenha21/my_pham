@@ -322,52 +322,53 @@
 										<div class="row">
 											<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 												<div>
-													<a href="" class="title-two">Trang Điểm Mặt</a>
+												
+													<a href="<c:url value= "/classify/1"></c:url>" class="title-two">Trang Điểm Mặt</a>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=1">Kem che khuyết
+														<li><a href="<c:url value= "/classify/1"></c:url>">Kem che khuyết
 																điểm</a></li>
-														<li><a href="?page=classify&id=2">Cushion</a></li>
-														<li><a href="?page=classify&id=3">Kem nền</a></li>
-														<li><a href="?page=classify&id=4">Kem BB - CC -
+														<li><a href="<c:url value= "/classify/2"></c:url>">Cushion</a></li>
+														<li><a href="<c:url value= "/classify/3"></c:url>">Kem nền</a></li>
+														<li><a href="<c:url value= "/classify/4"></c:url>">Kem BB - CC -
 																DD</a></li>
-														<li><a href="?page=classify&id=5">Primer - Kem
+														<li><a href="<c:url value= "/classify/5"></c:url>">Primer - Kem
 																Lót</a></li>
-														<li><a href="?page=classify&id=6">Phấn phủ - Phấn
+														<li><a href="<c:url value= "/classify/6"></c:url>">Phấn phủ - Phấn
 																nền</a></li>
-														<li><a href="?page=classify&id=7">Phấn má hồng</a></li>
-														<li><a href="?page=classify&id=8">Tạo khối -
+														<li><a href="<c:url value= "/classify/7"></c:url>">Phấn má hồng</a></li>
+														<li><a href="<c:url value= "/classify/8"></c:url>">Tạo khối -
 																Highlighter</a></li>
-														<li><a href="?page=classify&id=9">Xịt khoáng nền</a></li>
+														<li><a href="<c:url value= "/classify/9"></c:url>">Xịt khoáng nền</a></li>
 													</ul>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 												<div>
-													<a href="?page=classify&id=10" class="title-two">Trang
+													<a href="<c:url value= "/classify/10"></c:url>" class="title-two">Trang
 														Điểm Mắt</a>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=10">Phấn Mắt</a></li>
-														<li><a href="?page=classify&id=11">Eye Primer –
+														<li><a href="<c:url value= "/classify/10"></c:url>">Phấn Mắt</a></li>
+														<li><a href="<c:url value= "/classify/11"></c:url>">Eye Primer –
 																Kem Lót Mắt</a></li>
-														<li><a href="?page=classify&id=12">Kẻ Mày</a></li>
-														<li><a href="?page=classify&id=13">Eyeliner – Kẻ
+														<li><a href="<c:url value= "/classify/12"></c:url>">Kẻ Mày</a></li>
+														<li><a href="<c:url value= "/classify/13"></c:url>">Eyeliner – Kẻ
 																Mắt</a></li>
-														<li><a href="?page=classify&id=14">Mascara</a></li>
+														<li><a href="<c:url value= "/classify/14"></c:url>">Mascara</a></li>
 													</ul>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 												<div>
-													<a href="?page=classify&id=15" class="title-two">Trang
+													<a href="<c:url value= "/classify/15"></c:url>" class="title-two">Trang
 														Điểm Môi</a>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=15">Che khuyết
+														<li><a href="<c:url value= "/classify/15"></c:url>">Che khuyết
 																điểm môi</a></li>
-														<li><a href="?page=classify&id=16">Son môi</a></li>
-														<li><a href="?page=classify&id=17">Son dưỡng </a></li>
-														<li><a href="?page=classify&id=18">Lót môi – Khóa
+														<li><a href="<c:url value= "/classify/16"></c:url>">Son môi</a></li>
+														<li><a href="<c:url value= "/classify/17"></c:url>">Son dưỡng </a></li>
+														<li><a href="<c:url value= "/classify/18"></c:url>">Lót môi – Khóa
 																môi</a></li>
-														<li><a href="?page=classify&id=19">Son high-end</a></li>
+														<li><a href="<c:url value= "/classify/19"></c:url>">Son high-end</a></li>
 													</ul>
 												</div>
 											</div>
@@ -390,48 +391,48 @@
 										<div class="row">
 											<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 												<div>
-													<a href="?page=classify&id=20" class="title-two">Mask -
+													<a href="<c:url value= "/classify/20"></c:url>" class="title-two">Mask -
 														Mặt nạ</a>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=20">Mặt nạ lột mụn</a></li>
-														<li><a href="?page=classify&id=21">Mask Đất Sét</a></li>
-														<li><a href="?page=classify&id=22">Mask Giấy</a></li>
-														<li><a href="?page=classify&id=23">Mask Đắp - Rửa
+														<li><a href="<c:url value= "/classify/20"></c:url>">Mặt nạ lột mụn</a></li>
+														<li><a href="<c:url value= "/classify/21"></c:url>">Mask Đất Sét</a></li>
+														<li><a href="<c:url value= "/classify/22"></c:url>">Mask Giấy</a></li>
+														<li><a href="<c:url value= "/classify/23"></c:url>">Mask Đắp - Rửa
 														</a></li>
-														<li><a href="?page=classify&id=24">Mask Ngủ</a></li>
-														<li><a href="?page=classify&id=25">Mask Thiên
+														<li><a href="<c:url value= "/classify/24"></c:url>">Mask Ngủ</a></li>
+														<li><a href="<c:url value= "/classify/25"></c:url>">Mask Thiên
 																Nhiên</a></li>
 													</ul>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 												<div>
-													<a href="?page=classify&id=26" class="title-two">Làm
+													<a href="<c:url value= "/classify/26"></c:url>" class="title-two">Làm
 														sạch da </a>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=26">Sữa rửa mặt</a></li>
-														<li><a href="?page=classify&id=27">Tẩy trang </a></li>
-														<li><a href="?page=classify&id=28">Tẩy tế bào
+														<li><a href="<c:url value= "/classify/26"></c:url>">Sữa rửa mặt</a></li>
+														<li><a href="<c:url value= "/classify/27"></c:url>">Tẩy trang </a></li>
+														<li><a href="<c:url value= "/classify/28"></c:url>">Tẩy tế bào
 																chết</a></li>
 													</ul>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 												<div>
-													<a href="?page=classify&id=29" class="title-two">Dưỡng
+													<a href="<c:url value= "/classify/29"></c:url>" class="title-two">Dưỡng
 														da </a>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=29">Dưỡng da mặt</a></li>
-														<li><a href="?page=classify&id=30">Hỗ trợ</a></li>
-														<li><a href="?page=classify&id=31">Dưỡng vùng mắt</a></li>
-														<li><a href="?page=classify&id=32">Kem dưỡng da</a></li>
-														<li><a href="?page=classify&id=33">Essence -
+														<li><a href="<c:url value= "/classify/29"></c:url>">Dưỡng da mặt</a></li>
+														<li><a href="<c:url value= "/classify/30"></c:url>">Hỗ trợ</a></li>
+														<li><a href="<c:url value= "/classify/31"></c:url>">Dưỡng vùng mắt</a></li>
+														<li><a href="<c:url value= "/classify/32"></c:url>">Kem dưỡng da</a></li>
+														<li><a href="<c:url value= "/classify/33"></c:url>">Essence -
 																Serum - Ampoule</a></li>
-														<li><a href="?page=classify&id=34">Lotion - Sữa
+														<li><a href="<c:url value= "/classify/34"></c:url>">Lotion - Sữa
 																dưỡng</a></li>
-														<li><a href="?page=classify&id=35">Toner - Nước
+														<li><a href="<c:url value= "/classify/35"></c:url>">Toner - Nước
 																hoa hồng</a></li>
-														<li><a href="?page=classify&id=36">Kem chống nắng</a></li>
+														<li><a href="<c:url value= "/classify/36"></c:url>">Kem chống nắng</a></li>
 													</ul>
 												</div>
 											</div>
@@ -454,24 +455,24 @@
 											<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 												<div>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=37">Set dưỡng tóc</a></li>
-														<li><a href="?page=classify&id=38">Dầu gội </a></li>
+														<li><a href="<c:url value= "/classify/37"></c:url>">Set dưỡng tóc</a></li>
+														<li><a href="<c:url value= "/classify/38"></c:url>">Dầu gội </a></li>
 													</ul>
 												</div>
 											</div>
 											<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 												<div>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=39">Dầu xả</a></li>
-														<li><a href="?page=classify&id=41">Kem ủ tóc</a></li>
+														<li><a href="<c:url value= "/classify/39"></c:url>">Dầu xả</a></li>
+														<li><a href="<c:url value= "/classify/40"></c:url>">Kem ủ tóc</a></li>
 													</ul>
 												</div>
 											</div>
 											<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 												<div>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=40">Dầu gội khô</a></li>
-														<li><a href="?page=classify&id=42">Serum dưỡng
+														<li><a href="<c:url value= "/classify/41"></c:url>">Dầu gội khô</a></li>
+														<li><a href="<c:url value= "/classify/42"></c:url>">Serum dưỡng
 																tóc</a></li>
 													</ul>
 												</div>
@@ -489,12 +490,13 @@
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 												<div>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=43">Dụng cụ trang
+														<li><a href="<c:url value= "/classify/43"></c:url>">Dụng cụ trang
 																điểm</a></li>
-														<li><a href="?page=classify&id=44">Phụ kiện làm
+														<li><a href="<c:url value= "/classify/44"></c:url>">Phụ kiện làm
 																đẹp</a></li>
-														<li><a href="?page=classify&id=45">Sơn móng - Rửa
+														<li><a href="<c:url value= "/classify/45"></c:url>">Sơn móng - Rửa
 																móng</a></li>
+														
 													</ul>
 												</div>
 											</div>
@@ -511,9 +513,9 @@
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 												<div>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=47">Nước hoa nữ </a></li>
-														<li><a href="?page=classify&id=48">Nước hoa nam</a></li>
-														<li><a href="?page=classify&id=49">Xịt thơm body</a></li>
+														<li><a href="<c:url value= "/classify/47"></c:url>">Nước hoa nữ </a></li>
+														<li><a href="<c:url value= "/classify/48"></c:url>">Nước hoa nam</a></li>
+														<li><a href="<c:url value= "/classify/49"></c:url>">Xịt thơm body</a></li>
 													</ul>
 												</div>
 											</div>
@@ -531,10 +533,10 @@
 											<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 												<div>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=50">Dưỡng thể -
+														<li><a href="<c:url value= "/classify/50"></c:url>">Dưỡng thể -
 																Body Lotion</a></li>
-														<li><a href="?page=classify&id=51">Sữa tắm</a></li>
-														<li><a href="?page=classify&id=52">Kem dưỡng toàn
+														<li><a href="<c:url value= "/classify/51"></c:url>">Sữa tắm</a></li>
+														<li><a href="<c:url value= "/classify/52"></c:url>">Kem dưỡng toàn
 																thân - Body Cream</a></li>
 													</ul>
 												</div>
@@ -542,20 +544,20 @@
 											<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 												<div>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=53">Dưỡng da tay</a></li>
-														<li><a href="?page=classify&id=54">Tẩy tế bào
+														<li><a href="<c:url value= "/classify/53"></c:url>">Dưỡng da tay</a></li>
+														<li><a href="<c:url value= "/classify/54"></c:url>">Tẩy tế bào
 																chết</a></li>
-														<li><a href="?page=classify&id=55">Tẩy lông</a></li>
+														<li><a href="<c:url value= "/classify/55"></c:url>">Tẩy lông</a></li>
 													</ul>
 												</div>
 											</div>
 											<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 												<div>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=classify&id=56">Khử mùi</a></li>
-														<li><a href="?page=classify&id=57">Giảm sẹo –
+														<li><a href="<c:url value= "/classify/56"></c:url>">Khử mùi</a></li>
+														<li><a href="<c:url value= "/classify/57"></c:url>">Giảm sẹo –
 																Giảm thâm – Giảm nám</a></li>
-														<li><a href="?page=classify&id=58">Chăm sóc răng
+														<li><a href="<c:url value= "/classify/58"></c:url>">Chăm sóc răng
 																miệng</a></li>
 													</ul>
 												</div>

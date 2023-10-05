@@ -619,7 +619,7 @@ $('.btn-hea').click(function(){
 								<strong>SẢN PHẨM MỚI VỀ</strong>
 							</div>
 							<div class="content-left">
-								<c:forEach var="sanphammoive" items="${sanphammoive }">
+								<c:forEach var="sanphammoive" items="${sanphammoive }" end = "5">
 									<div class="box-shas">
 										<div class="box-imgs">
 											<a
