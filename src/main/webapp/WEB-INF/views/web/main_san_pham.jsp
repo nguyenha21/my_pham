@@ -1,14 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	<%@ include file="/common/taglib.jsp"%>
+<%@ include file="/common/taglib.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="<c:url value='/template/web/public/css/shopcard.css'/>" rel="stylesheet" type="text/css">
-<link href="<c:url value='/template/web/public/css/category.css'/>" rel="stylesheet" type="text/css">
-<link href="<c:url value='/template/web/public/css/easyzoom.css'/>" rel="stylesheet" type="text/css">
+<link href="<c:url value='/template/web/public/css/shopcard.css'/>"
+	rel="stylesheet" type="text/css">
+<link href="<c:url value='/template/web/public/css/category.css'/>"
+	rel="stylesheet" type="text/css">
+<link href="<c:url value='/template/web/public/css/easyzoom.css'/>"
+	rel="stylesheet" type="text/css">
 <script src="<c:url value='/template/web/public/js/easyzoom.js'/>"></script>
 <style type="text/css">
 .thumbnails {
@@ -54,22 +57,27 @@
 </style>
 </head>
 <body>
-	
+
 	<main role="main" class="pb-3">
 		<div class="bracum">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<ol class="ol-non">
-							<li><a href="./">Trang chủ</a></li>
+							<li><a href='<c:url value="/" ></c:url>'>Trang chủ</a></li>
+							
 							<li><a
-								href="?page=classify&id=<?php echo $resultProductDetail['ma_pl']; ?>">
+								href="<c:forEach var="chitietsanpham" items="${chitietsanpham }">
+										<c:url value= "/category/${chitietsanpham.ma_Pl }"></c:url>
+									</c:forEach>">
 									<c:forEach var="chitietsanpham" items="${chitietsanpham }">
 										${chitietsanpham.tenLoaiSp }
 									</c:forEach>
 							</a></li>
 							<li><a
-								href="?page=product&id=<?php echo $resultProductDetail['ma_sp']; ?>">
+								href="<c:forEach var="chitietsanpham" items="${chitietsanpham }">
+										<c:url value= "/product/${chitietsanpham.ma_Sp }"></c:url>
+									</c:forEach>">
 									<c:forEach var="chitietsanpham" items="${chitietsanpham }">
 										${chitietsanpham.ten_Sp }
 									</c:forEach>
@@ -92,9 +100,11 @@
 											<div class="config-alige">
 												<div
 													class="easyzoom easyzoom--overlay easyzoom--with-thumbnails is-ready">
-													<a href="<c:forEach var="chitietsanpham" items="${chitietsanpham }">
+													<a
+														href="<c:forEach var="chitietsanpham" items="${chitietsanpham }">
 														        <c:url value='/template/${chitietsanpham.img }'/>
-														    </c:forEach>"> <img
+														    </c:forEach>">
+														<img
 														src="<c:forEach var="chitietsanpham" items="${chitietsanpham }">
 														        <c:url value='/template/${chitietsanpham.img }'/>
 														    </c:forEach>"
@@ -105,24 +115,32 @@
 										</div>
 										<div class="box-thumnail-detail">
 											<ul class="thumbnails ">
+												<li><a
+													href="<c:forEach var="chitietsanpham" items="${chitietsanpham }">
+														        <c:url value='/template/${chitietsanpham.img }'/>
+														    </c:forEach>"
+													data-standard="<c:forEach var="chitietsanpham" items="${chitietsanpham }">
+														        <c:url value='/template/${chitietsanpham.img }'/>
+														    </c:forEach>">
+														<img
+														src="<c:forEach var="chitietsanpham" items="${chitietsanpham }">
+														        <c:url value='/template/${chitietsanpham.img }'/>
+														    </c:forEach>"
+														alt="">
+												</a></li>
+												<c:forEach var="imgspbs" items="${imgspbs }">
 												<li>
-		                                        <a href="<c:forEach var="chitietsanpham" items="${chitietsanpham }">
-														        <c:url value='/template/${chitietsanpham.img }'/>
-														    </c:forEach>" data-standard="<?php echo $resultProductDetail['img']; ?>">
-		                                            <img src="<c:forEach var="chitietsanpham" items="${chitietsanpham }">
-														        <c:url value='/template/${chitietsanpham.img }'/>
-														    </c:forEach>" alt="">
-		                                        </a>
-		                                    </li>
-		                                    <?php while ($resultImgbs = mysqli_fetch_assoc($queryImgbs)) {
+													<a href="<c:url value='/template/${imgspbs.img }'/>"
+													data-standard="<c:url value='/template/${imgspbs.img }'/>"> <img
+														src="<c:url value='/template/${imgspbs.img }'/>" alt="">
+													</a>
+												</li>
+												</c:forEach>
+												<?php while ($resultImgbs = mysqli_fetch_assoc($queryImgbs)) {
                                         ?>
-		                                        <li>
-		                                            <a href="<?php echo $resultImgbs['img'] ?>" data-standard="<?php echo $resultImgbs['img'] ?>">
-		                                                <img src="<?php echo $resultImgbs['img'] ?>" alt="">
-		                                            </a>
-		                                        </li>
-		                                    <?php } ?>
 												
+												<?php } ?>
+
 												<div class="clr"></div>
 
 											</ul>
@@ -151,30 +169,32 @@
 										        ${chitietsanpham.ten_Sp }
 										    </c:forEach>
 										</h1>
-									
+
 										<div class="box-price">
 											<div class="price-drop">
-												<span> 
-												<c:forEach var="chitietsanpham" items="${chitietsanpham }">
-													<fmt:formatNumber value="${chitietsanpham.gia_Ban}" type="currency" currencySymbol="₫" />
-												</c:forEach>
-												</span> <span class="issale hide">
-												<c:forEach var="chitietsanpham" items="${chitietsanpham }">
-													<fmt:formatNumber value="${chitietsanpham.gia_Thi_Truong}" type="currency" currencySymbol="₫" />
-												</c:forEach>
+												<span> <c:forEach var="chitietsanpham"
+														items="${chitietsanpham }">
+														<fmt:formatNumber value="${chitietsanpham.gia_Ban}"
+															type="currency" currencySymbol="₫" />
+													</c:forEach>
+												</span> <span class="issale hide"> <c:forEach
+														var="chitietsanpham" items="${chitietsanpham }">
+														<fmt:formatNumber value="${chitietsanpham.gia_Thi_Truong}"
+															type="currency" currencySymbol="₫" />
+													</c:forEach>
 												</span> <span class="persale hide ">- <?php echo number_format((float)20, 0, '.', '') ?>%
 												</span>
 											</div>
 											<div class="price-vince">
 												<p>
-												
-													Giá thị trường: <span>
-													<c:forEach var="chitietsanpham" items="${chitietsanpham }">
-														<fmt:formatNumber value="${chitietsanpham.gia_Thi_Truong}" type="currency" currencySymbol="₫" />
-													</c:forEach>
-													</span> - Tiết kiệm: <span> ₫
-													</span> (<span>- %
-													</span>)
+
+													Giá thị trường: <span> <c:forEach
+															var="chitietsanpham" items="${chitietsanpham }">
+															<fmt:formatNumber
+																value="${chitietsanpham.gia_Thi_Truong}" type="currency"
+																currencySymbol="₫" />
+														</c:forEach>
+													</span> - Tiết kiệm: <span> ₫ </span> (<span>- % </span>)
 												</p>
 											</div>
 											<div class="hanc">
@@ -186,25 +206,27 @@
 												</p>
 											</div>
 										</div>
-										
+
 										<div class="box-note ">
-											<?php echo $resultProductDetail['khai_quat']; ?>
+											<c:forEach var="chitietsanpham" items="${chitietsanpham }">
+														${chitietsanpham.khaiQuat}
+													</c:forEach>
 										</div>
 										<div class="card-box">
 											<div class="inner-load">
 												<div class="box-add">
-													<!--  <div class="number-card">
-                                                        <span>Số lượng:</span>
-                                                        <input type="number" name="numberproduct" id="numberproduct" class="form-control" value="1" min="1" max="<?php echo $resultProductDetail['sl_trong_kho']; ?>" data-barcode="" data-refid="">
-                                                        <div class="clr"></div>
-                                                    </div> -->
+													
 													<div class="bst">
 														<button type="button" class="btn-bts btn-atc"
-															onclick="load_cart(<?php echo $resultProductDetail['ma_sp'] ?>)">
+															onclick="load_cart(<c:forEach var="chitietsanpham" items="${chitietsanpham }">
+														        ${chitietsanpham.ma_Sp }
+														    </c:forEach>)">
 															<i class="fa fa-shopping-cart"></i> Thêm giỏ hàng
 														</button>
 														<button type="button" class="btn-bts btn-hea"
-															id="<?php echo $resultProductDetail['ma_sp'] ?>">
+															id="<c:forEach var="chitietsanpham" items="${chitietsanpham }">
+														        ${chitietsanpham.ma_Sp }
+														    </c:forEach>">
 															<!-- onclick="load_like(<?php echo $resultProductDetail['ma_sp'] ?>)" -->
 															<i class="fa fa-heart-o heart_new"></i>
 														</button>
@@ -261,22 +283,18 @@ $('.btn-hea').click(function(){
 							</div>
 							<div class="body-box">
 								<div class="owl-carousel owl-theme">
-									<?php while ($resultProductNgauNhien = mysqli_fetch_assoc($queryProductNgauNhien)) {
-         $ma_SP = $resultProductNgauNhien['ma_sp'];
-        include('ajax/kiemtraKM.php');
-        if ($queryKM->num_rows == 0) {
-        ?>
+									<c:forEach var="sanphamdexuat" items="${sanphamdexuat }">
 									<div class="item">
 										<div class="pd-box ">
 											<div class="box-images">
 												<a
-													href="?page=product&id=<?php echo $resultProductNgauNhien['ma_sp'] ?>">
+													href="<c:url value= "/product/${sanphamdexuat.ma_Sp }"></c:url>">
 													<img data-src="" alt="" class="img-reponsive owl-lazy "
-													src="<?php echo $resultProductNgauNhien['img'] ?>"
+													src="<c:url value="/template/${sanphamdexuat.img }"></c:url>"
 													style="opacity: 1;">
 												</a>
 												<button type="button"
-													onclick="load_cart(<?php echo $resultProductNgauNhien['ma_sp'] ?>)"
+													onclick="load_cart(${sanphamdexuat.ma_Sp })"
 													class="btn-addlike ">
 													<i class="fa fa-cart-plus"></i>
 												</button>
@@ -287,65 +305,29 @@ $('.btn-hea').click(function(){
 											<div class="box-content">
 												<h3>
 													<a
-														href="?page=product&id=<?php echo $resultProductNgauNhien['ma_sp'] ?>">
-														<?php echo $resultProductNgauNhien['ten_sp'] ?>
+														href="<c:url value= "/product/${sanphamdexuat.ma_Sp }"></c:url>">
+														${sanphamdexuat.ten_Sp }
 													</a>
 												</h3>
 												<div>
-													<span class="price-drop"> <?php echo number_format($resultProductNgauNhien['gia_ban'], 0, ',', ','); ?>₫
-													</span> <span class="price "> <?php echo number_format($resultProductNgauNhien['gia_thi_truong'], 0, ',', ','); ?>₫
+													<span class="price-drop"><fmt:formatNumber value="${sanphamdexuat.gia_Ban}" type="currency" currencySymbol="₫" />
+													</span> <span class="price "> <fmt:formatNumber value="${sanphamdexuat.gia_Ban}" type="currency" currencySymbol="₫" />
 													</span>
 												</div>
 											</div>
 										</div>
 									</div>
-									<?php 
-                            }else{ 
-                                $resultKM = mysqli_fetch_assoc($queryKM);
-                                $gia_ban = $resultProductNgauNhien['gia_ban'];
-                                $gia_sau = $gia_ban*(100-$resultKM['gia_tri_km'])/100;
-                            ?>
-									<div class="item">
-										<div class="pd-box ">
-											<div class="box-images">
-												<a
-													href="?page=product&id=<?php echo $resultProductNgauNhien['ma_sp'] ?>">
-													<img data-src="" alt="" class="img-reponsive owl-lazy "
-													src="<?php echo $resultProductNgauNhien['img'] ?>"
-													style="opacity: 1;">
-												</a>
-												<button type="button"
-													onclick="load_cart(<?php echo $resultProductNgauNhien['ma_sp'] ?>)"
-													class="btn-addlike ">
-													<i class="fa fa-cart-plus"></i>
-												</button>
-												<div class="sale-off">
-													<?php echo $resultKM['gia_tri_km']; ?>
-													%<br>OFF
-												</div>
-											</div>
-											<div class="box-content">
-												<h3>
-													<a
-														href="?page=product&id=<?php echo $resultProductNgauNhien['ma_sp'] ?>">
-														<?php echo $resultProductNgauNhien['ten_sp'] ?>
-													</a>
-												</h3>
-												<div>
-													<span class="price-drop"> <?php echo number_format($gia_sau, 0, ',', ','); ?>₫
-													</span> <span class="price "> <?php echo number_format($resultProductNgauNhien['gia_thi_truong'], 0, ',', ','); ?>₫
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<?php } } ?>
+									
+									</c:forEach>
+																		
 
 								</div>
 							</div>
 							<!-- Thông tin sản phẩm -->
 							<div class="box-thongtin">
-								<?php echo $resultProductDetail['noidung']; ?>
+								<c:forEach var="chitietsanpham" items="${chitietsanpham }">
+														${chitietsanpham.noiDung}
+													</c:forEach>
 
 							</div>
 						</div>
@@ -361,41 +343,45 @@ $('.btn-hea').click(function(){
 							<div class="body-box">
 								<div class="owl-carousel owl-theme">
 									<c:forEach var="sanphamcungloai" items="${sanphamcungloai }">
-									<div class="item">
-										<div class="pd-box ">
-											<div class="box-images">
-												<a
-													href="<c:url value= "/product/${sanphamcungloai.ma_Sp }"></c:url>">
-													<img data-src="" alt="" class="img-reponsive owl-lazy "
-													src="<c:url value="/template/${sanphamcungloai.img }"></c:url>" style="opacity: 1;">
-												</a>
-												<button type="button"
-													onclick="load_cart(${sanphamcungloai.ma_Sp})"
-													class="btn-addlike ">
-													<i class="fa fa-cart-plus"></i>
-												</button>
-												<div class="sale-off hide">
-													0%<br>OFF
-												</div>
-											</div>
-											<div class="box-content">
-												<h3>
+										<div class="item">
+											<div class="pd-box ">
+												<div class="box-images">
 													<a
 														href="<c:url value= "/product/${sanphamcungloai.ma_Sp }"></c:url>">
-														${sanphamcungloai.ten_Sp }
+														<img data-src="" alt="" class="img-reponsive owl-lazy "
+														src="<c:url value="/template/${sanphamcungloai.img }"></c:url>"
+														style="opacity: 1;">
 													</a>
-												</h3>
-												<div>
-													<span class="price-drop"> <fmt:formatNumber value="${sanphamcungloai.gia_Ban}" type="currency" currencySymbol="₫" />
-													</span> <span class="price "> <fmt:formatNumber value="${sanphamcungloai.gia_Thi_Truong}" type="currency" currencySymbol="₫" />
-													</span>
+													<button type="button"
+														onclick="load_cart(${sanphamcungloai.ma_Sp})"
+														class="btn-addlike ">
+														<i class="fa fa-cart-plus"></i>
+													</button>
+													<div class="sale-off hide">
+														0%<br>OFF
+													</div>
+												</div>
+												<div class="box-content">
+													<h3>
+														<a
+															href="<c:url value= "/product/${sanphamcungloai.ma_Sp }"></c:url>">
+															${sanphamcungloai.ten_Sp } </a>
+													</h3>
+													<div>
+														<span class="price-drop"> <fmt:formatNumber
+																value="${sanphamcungloai.gia_Ban}" type="currency"
+																currencySymbol="₫" />
+														</span> <span class="price "> <fmt:formatNumber
+																value="${sanphamcungloai.gia_Thi_Truong}"
+																type="currency" currencySymbol="₫" />
+														</span>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									
+
 									</c:forEach>
-									
+
 
 								</div>
 
@@ -425,7 +411,8 @@ $('.btn-hea').click(function(){
 							<div class="content-left pad-8-15">
 								<div class="box-shas rig-limit">
 									<img alt="abc" class="img-reponsive lazy"
-										src="<c:url value='/template/img/chinh-sach-04.png'/>" style="">
+										src="<c:url value='/template/img/chinh-sach-04.png'/>"
+										style="">
 									<div class="content-shas">
 										<strong>mỹ phẩm 1000% chính hãng </strong>
 										<p>Chất lượng sản phẩm là sự tin cậy của khách hàng</p>
@@ -434,7 +421,8 @@ $('.btn-hea').click(function(){
 								</div>
 								<div class="box-shas rig-limit">
 									<img alt="abc" class="img-reponsive lazy"
-										src="<c:url value='/template/img/chinh-sach-05.png'/>" style="">
+										src="<c:url value='/template/img/chinh-sach-05.png'/>"
+										style="">
 									<div class="content-shas">
 										<strong> LUÔN TÍCH ĐIỂM </strong>
 										<p>Đơn hàng từ 100M=1 điểm, 10 điểm nhận voucher 1k</p>
@@ -443,7 +431,8 @@ $('.btn-hea').click(function(){
 								</div>
 								<div class="box-shas rig-limit">
 									<img alt="abc" class="img-reponsive lazy"
-										src="<c:url value='/template/img/chinh-sach-06.png'/>" style="">
+										src="<c:url value='/template/img/chinh-sach-06.png'/>"
+										style="">
 									<div class="content-shas">
 										<strong>MIỄN PHÍ GIAO HÀNG </strong>
 										<p>Đơn hàng trên 200M nội thành Hà Nội</p>
@@ -452,7 +441,8 @@ $('.btn-hea').click(function(){
 								</div>
 								<div class="box-shas rig-limit">
 									<img alt="abc" class="img-reponsive lazy"
-										src="<c:url value='/template/img/chinh-sach-07.png'/>" style="">
+										src="<c:url value='/template/img/chinh-sach-07.png'/>"
+										style="">
 									<div class="content-shas">
 										<strong>TRI ÂN KHÁCH HÀNG</strong>
 										<p>Với các chương trình khuyến mãi, các sự kiện &amp; quà
@@ -629,26 +619,30 @@ $('.btn-hea').click(function(){
 								<strong>SẢN PHẨM MỚI VỀ</strong>
 							</div>
 							<div class="content-left">
-							<c:forEach var="sanphammoive" items="${sanphammoive }">
-								<div class="box-shas">
-									<div class="box-imgs">
-										<a href="<c:url value= "/product/${sanphammoive.ma_Sp }"></c:url>"
-											title=""> <img alt="" class="img-reponsive lazy"
-											data-id="lazy-t0" src="<c:url value="/template/${sanphammoive.img }"></c:url>"
-											style="">
-										</a>
+								<c:forEach var="sanphammoive" items="${sanphammoive }">
+									<div class="box-shas">
+										<div class="box-imgs">
+											<a
+												href="<c:url value= "/product/${sanphammoive.ma_Sp }"></c:url>"
+												title=""> <img alt="" class="img-reponsive lazy"
+												data-id="lazy-t0"
+												src="<c:url value="/template/${sanphammoive.img }"></c:url>"
+												style="">
+											</a>
+										</div>
+										<div class="content-shas">
+											<a
+												href="<c:url value= "/product/${sanphammoive.ma_Sp }"></c:url>"
+												title=""> ${sanphammoive.ten_Sp } </a> <span> <fmt:formatNumber
+													value="${sanphammoive.gia_Ban}" type="currency"
+													currencySymbol="₫" />
+											</span>
+										</div>
+										<div class="clr"></div>
 									</div>
-									<div class="content-shas">
-										<a href="<c:url value= "/product/${sanphammoive.ma_Sp }"></c:url>"
-											title=""> ${sanphammoive.ten_Sp }
-										</a> <span> <fmt:formatNumber value="${sanphammoive.gia_Ban}" type="currency" currencySymbol="₫" />
-										</span>
-									</div>
-									<div class="clr"></div>
-								</div>
-							</c:forEach>
-								
-		
+								</c:forEach>
+
+
 							</div>
 						</div>
 						<!-- kết thúc 33333333333 -->

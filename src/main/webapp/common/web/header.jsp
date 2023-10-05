@@ -155,7 +155,7 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-12">
 						<div class="box-logo">
-							<a href="./"> <img
+							<a href="<c:url value="/" ></c:url>"> <img
 								src="<c:url value='/template/images/products/24-07-2020/logo.png'/>"
 								alt="" class="img-reponsive">
 							</a>
@@ -379,7 +379,7 @@
 											</div>
 										</div>
 									</div></li>
-								<li class="li-parent"><a href="?page=category&id=2"
+								<li class="li-parent"><a href="<c:url value= "/category/2"></c:url>"
 									class="a-parent"> Chăm Sóc Da <i
 										class="fa fa-angle-down hidden-xs hidden-sm"
 										aria-hidden="true"></i> <i class="fa fa-angle-right hidden-md"
@@ -443,7 +443,7 @@
 											</div>
 										</div>
 									</div></li>
-								<li class="li-parent"><a href="?page=category&id=3"
+								<li class="li-parent"><a href="<c:url value= "/category/3"></c:url>"
 									class="a-parent"> Chăm Sóc Tóc <i
 										class="fa fa-angle-down hidden-xs hidden-sm"
 										aria-hidden="true"></i> <i class="fa fa-angle-right hidden-md"
@@ -478,7 +478,7 @@
 											</div>
 										</div>
 									</div></li>
-								<li class="li-parent"><a href="?page=category&id=4"
+								<li class="li-parent"><a href="<c:url value= "/category/4"></c:url>"
 									class="a-parent"> Phụ Kiện <i
 										class="fa fa-angle-down hidden-xs hidden-sm"
 										aria-hidden="true"></i> <i class="fa fa-angle-right hidden-md"
@@ -500,7 +500,7 @@
 											</div>
 										</div>
 									</div></li>
-								<li class="li-parent"><a href="?page=category&id=5"
+								<li class="li-parent"><a href="<c:url value= "/category/5"></c:url>"
 									class="a-parent"> Nước Hoa <i
 										class="fa fa-angle-down hidden-xs hidden-sm"
 										aria-hidden="true"></i> <i class="fa fa-angle-right hidden-md"
@@ -519,7 +519,7 @@
 											</div>
 										</div>
 									</div></li>
-								<li class="li-parent"><a href="?page=category&id=6"
+								<li class="li-parent"><a href="<c:url value= "/category/6"></c:url>"
 									class="a-parent"> Chăm Sóc Toàn Thân <i
 										class="fa fa-angle-down hidden-xs hidden-sm"
 										aria-hidden="true"></i> <i class="fa fa-angle-right hidden-md"

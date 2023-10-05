@@ -20,6 +20,7 @@ public class ProductController extends BaseController {
 	public HomeServiceImpl homeServiceImpl;
 	@RequestMapping(value = {"product/{id}"})
 	public ModelAndView Category(@PathVariable String id) {
+		_mavShare.addObject("imgspbs",productServiceImpl.GetImgBosung(id.toString()));
 		_mavShare.addObject("sanphamdexuat",productServiceImpl.GetSanphamDexuat());
 		_mavShare.addObject("sanphammoive",homeServiceImpl.GetSanphamMoive());
 		_mavShare.addObject("chitietsanpham",productServiceImpl.GetSanphamChitiet(id.toString()));

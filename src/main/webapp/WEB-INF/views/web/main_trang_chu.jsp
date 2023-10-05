@@ -76,7 +76,7 @@
 										</div>
 										<div class="box-content">
 											<h3>
-												<a href="./?page=product&id=${spmoive.ma_Sp }">${spmoive.ten_Sp }</a>
+												<a href="<c:url value= "/product/${spmoive.ma_Sp }"></c:url>">${spmoive.ten_Sp }</a>
 											</h3>
 											<div>
 												<span class="price-drop"><fmt:formatNumber value="${spmoive.gia_Ban}" type="currency" currencySymbol="₫" /></span> <span
@@ -126,9 +126,7 @@ $(document).ready(function(){
 									<h2>TOP BÁN CHẠY</h2> <i class="fa fa-angle-right"
 									aria-hidden="true"></i>
 								</a>
-								<!-- <button class="btn-ct hidden-md" onclick="" data-id="topsale">
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                            </button> -->
+								
 								<div class="clr"></div>
 							</div>
 							<div class="body-box-category">
@@ -137,12 +135,12 @@ $(document).ready(function(){
 								<div class="col-2-ct">
 									<div class="pd-box pd-box-category">
 										<div class="box-images">
-											<a href="?page=product&id=${topbanchay.ma_Sp}"> <img alt=""
+											<a href="<c:url value= "/product/${topbanchay.ma_Sp }"></c:url>"> <img alt=""
 												class="img-reponsive lazy "
 												src="<c:url value="/template/${topbanchay.img }"></c:url>"
 												style="">
 											</a>
-											<button type="button" onclick="load_cart(81)"
+											<button type="button" onclick="load_cart(${topbanchay.ma_Sp })"
 												class="btn-addlike ">
 												<i class="fa fa-cart-plus"></i>
 											</button>
@@ -152,7 +150,7 @@ $(document).ready(function(){
 										</div>
 										<div class="box-content">
 											<h3>
-												<a href="?page=product&id=${topbanchay.ma_Sp}">${topbanchay.ten_Sp}</a>
+												<a href="<c:url value= "/product/${topbanchay.ma_Sp }"></c:url>">${topbanchay.ten_Sp}</a>
 											</h3>
 											<div>
 												<span class="price-drop"><fmt:formatNumber value="${topbanchay.gia_Ban}" type="currency" currencySymbol="₫" /></span> 
@@ -194,7 +192,7 @@ $(document).ready(function(){
 								<div class="col-2-ct">
 									<div class="pd-box pd-box-category">
 										<div class="box-images">
-											<a href="?page=product&id=${sanphamtrangdiem.ma_Sp }"
+											<a href="<c:url value= "/product/${sanphamtrangdiem.ma_Sp }"></c:url>"
 												title="Tạo Khối Dạng Phấn Too Cool For School ArtClass">
 												<img src="<c:url value="/template/${sanphamtrangdiem.img }"></c:url>"
 												alt="" class="img-reponsive lazy ">
@@ -209,7 +207,7 @@ $(document).ready(function(){
 										</div>
 										<div class="box-content">
 											<h3>
-												<a href="?page=product&id=${sanphamtrangdiem.ma_Sp}">${sanphamtrangdiem.ten_Sp }</a>
+												<a href="<c:url value= "/product/${sanphamtrangdiem.ma_Sp }"></c:url>">${sanphamtrangdiem.ten_Sp }</a>
 											</h3>
 											<div>
 												<span class="price-drop"><fmt:formatNumber value="${sanphamtrangdiem.gia_Ban}" type="currency" currencySymbol="₫" /></span> <span
@@ -257,7 +255,7 @@ $(document).ready(function(){
 								<div class="col-2-ct">
 									<div class="pd-box pd-box-category">
 										<div class="box-images">
-											<a href="?page=product&id=${sanphamchamsocda.ma_Sp }"
+											<a href="<c:url value= "/product/${sanphamchamsocda.ma_Sp }"></c:url>"
 												title="Tạo Khối Dạng Phấn Too Cool For School ArtClass">
 												<img src="<c:url value="/template/${sanphamchamsocda.img }"></c:url>"
 												alt="" class="img-reponsive lazy ">
@@ -272,7 +270,7 @@ $(document).ready(function(){
 										</div>
 										<div class="box-content">
 											<h3>
-												<a href="?page=product&id=${sanphamchamsocda.ma_Sp}">${sanphamchamsocda.ten_Sp }</a>
+												<a href="<c:url value= "/product/${sanphamchamsocda.ma_Sp }"></c:url>">${sanphamchamsocda.ten_Sp }</a>
 											</h3>
 											<div>
 												<span class="price-drop"><fmt:formatNumber value="${sanphamchamsocda.gia_Ban}" type="currency" currencySymbol="₫" /></span> <span

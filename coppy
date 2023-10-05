@@ -25,7 +25,10 @@
     <fmt:formatNumber value="${topbanchay.gia_Thi_Truong}" type="currency" currencySymbol="₫" />
 
     <c:forEach var="chitietsanpham" items="${chitietsanpham }">
-        /template/${chitietsanpham.img }
+        <c:url value='/template/images/products/24-07-2020/logo.png'/>
     </c:forEach>
     <c:forEach var="chitietsanpham" items="${chitietsanpham }">
     <fmt:formatNumber value="${chitietsanpham.gia_Thi_Truong}" type="currency" currencySymbol="₫" /></c:forEach>
+
+
+    <c:url value= "/product/${sanphamcungloai.ma_Sp }"></c:url>

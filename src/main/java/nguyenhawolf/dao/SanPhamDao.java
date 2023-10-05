@@ -47,9 +47,8 @@ public class SanPhamDao {
 		StringBuffer  varname1 = new StringBuffer();
 		varname1.append("SELECT sanpham.* ");
 		varname1.append("FROM `sanpham` ");
-		varname1.append("INNER JOIN phanloaisp ON sanpham.ma_pl = phanloaisp.ma_pl ");
-		varname1.append("WHERE phanloaisp.ma_pl = 2 AND sanpham.sl_trong_kho > 0 AND sanpham.hien_thi = 1 ");
-		varname1.append("ORDER BY RAND() ");
+		varname1.append("WHERE sanpham.sl_trong_kho > 0 AND sanpham.hien_thi = 1 ");
+		varname1.append("ORDER BY `sanpham`.`sl_da_ban` DESC ");
 		varname1.append("LIMIT 8");
 		list = _jdbcTemplate.query(varname1.toString(), new MpSanpham());
 		return list;

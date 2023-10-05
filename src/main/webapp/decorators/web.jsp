@@ -12,6 +12,31 @@
 <link href="<c:url value='/template/web/public/css/category.css'/>" rel="stylesheet" type="text/css">
 <link href="<c:url value='/template/web/public/css/easyzoom.css'/>" rel="stylesheet" type="text/css">
 <script src="<c:url value='/template/web/public/js/easyzoom.js'/>"></script>
+<!-- phân trang -->
+<style>
+.phantrang {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.phantrang a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.phantrang a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.phantrang a:hover:not(.active) {background-color: #ddd;}
+</style>
+<!--  -->
+
 <style type="text/css">
 .thumbnails {
 	display: inline-block;
