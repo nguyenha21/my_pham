@@ -19,8 +19,8 @@
 							<li><a
 							
 							
-								href="<c:forEach var="danhmuc" items="${danhmuc }"><c:url value= "/category/${danhmuc.maDm }"></c:url></c:forEach>">
-									<c:forEach var="danhmuc" items="${danhmuc }">${danhmuc.tenDm }</c:forEach>
+								href="<c:forEach var="thuonghieu" items="${thuonghieu }"><c:url value= "/trademark/${thuonghieu.maTh }"></c:url></c:forEach>">
+									<c:forEach var="thuonghieu" items="${thuonghieu }">${thuonghieu.tenThuongHieu }</c:forEach>
 							</a></li>
 						</ol>
 					</div>
@@ -35,15 +35,6 @@
 					<!-- bên phải -->
 					<div class="col-lg-9 order-lg-last">
 						<div class="box-manugar">
-						
-						
-							<!-- ảnh đại diện danh mục -->
-							<a href="" class="mar-bot-20 dl-block"> <img
-								src="<c:forEach var="danhmuc" items="${danhmuc }"><c:url value="/template/${danhmuc.img }"></c:url></c:forEach>"
-								alt="<c:forEach var="danhmuc" items="${danhmuc }">${danhmuc.tenDm }</c:forEach>"
-								class="img-reponsive">
-							</a>
-							<!-- kết thúc -->
 							<!-- phần conten -->
 							<div class="my-content">
 
@@ -52,7 +43,7 @@
 								<div class="head-box">
 									<div class="title-box">
 										<h2>
-											<a href="" title="<c:forEach var="danhmuc" items="${danhmuc }">${danhmuc.tenDm }</c:forEach>"> <c:forEach var="danhmuc" items="${danhmuc }">${danhmuc.tenDm }</c:forEach>
+											<a href="" title="<c:forEach var="thuonghieu" items="${thuonghieu }">${danhmuc.tenThuongHieu }</c:forEach>"> <c:forEach var="thuonghieu" items="${thuonghieu }">${thuonghieu.tenThuongHieu }</c:forEach>
 
 											</a>
 										</h2>
@@ -137,11 +128,11 @@
 									<div class="phantrang" style="color: red">
 										<c:forEach var="item" begin="1" end="${paginatesInfo.totalPage}" varStatus="loop">
 											<c:if test="${(loop.index) == paginatesInfo.currentPage}">
-												<a href="<c:url value= "/category/${idCategory }/${loop.index }"></c:url>" class="active">${loop.index }</a>
+												<a href="<c:url value= "/trademark/${idTrademark }/${loop.index }"></c:url>" class="active">${loop.index }</a>
 											</c:if>
 											
 											<c:if test="${(loop.index) != paginatesInfo.currentPage}">
-												<a href="<c:url value= "/category/${idCategory }/${loop.index }"></c:url>">${loop.index }</a>
+												<a href="<c:url value= "/trademark/${idTrademark }/${loop.index }"></c:url>">${loop.index }</a>
 											</c:if>
 											
 										</c:forEach>

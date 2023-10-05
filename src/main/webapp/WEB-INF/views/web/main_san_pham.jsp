@@ -68,7 +68,7 @@
 							
 							<li><a
 								href="<c:forEach var="chitietsanpham" items="${chitietsanpham }">
-										<c:url value= "/category/${chitietsanpham.ma_Pl }"></c:url>
+										<c:url value= "/classify/${chitietsanpham.ma_Pl }"></c:url>
 									</c:forEach>">
 									<c:forEach var="chitietsanpham" items="${chitietsanpham }">
 										${chitietsanpham.tenLoaiSp }
@@ -88,7 +88,7 @@
 
 			</div>
 		</div>
-		<div class>
+
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-9">
@@ -136,12 +136,9 @@
 													</a>
 												</li>
 												</c:forEach>
-												<?php while ($resultImgbs = mysqli_fetch_assoc($queryImgbs)) {
-                                        ?>
 												
-												<?php } ?>
 
-												<div class="clr"></div>
+												<!-- <div class="clr"></div> -->
 
 											</ul>
 
@@ -461,148 +458,157 @@ $('.btn-hea').click(function(){
 							</div>
 							<div class="content-left">
 								<ul class="ul-non ul-left">
-									<li class=" "><a href="?page=category&id=1"
+									<li class=" "><a
+										href="<c:url value= '/category/1'></c:url>"
 										title="Trang Điểm"> <i class="fa fa-angle-right"
 											aria-hidden="true"></i> Trang Điểm
 									</a>
 										<ul class="ul-non ul-childs">
-											<li><a href="?page=classify&id=1" title="Trang Điểm Mặt"
+											<li><a href="<c:url value= '/classify/1'></c:url>" title="Trang Điểm Mặt"
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Trang Điểm Mặt
 											</a></li>
-											<li><a href="?page=classify&id=10"
+											<li><a href="<c:url value= '/classify/13'></c:url>"
 												title="Trang Điểm Mắt" class=""> <i
 													class="fa fa-caret-right" aria-hidden="true"></i> Trang
 													Điểm Mắt
 											</a></li>
-											<li><a href="?page=classify&id=15"
+											<li><a href="<c:url value= '/classify/18'></c:url>"
 												title="Trang Điểm Môi" class=""> <i
 													class="fa fa-caret-right" aria-hidden="true"></i> Trang
 													Điểm Môi
 											</a></li>
 										</ul></li>
-									<li class=" "><a href="" title="Chăm Sóc Da"> <i
-											class="fa fa-angle-right" aria-hidden="true"></i> Chăm Sóc Da
+									<li class=" "><a
+										href="<c:url value= '/category/2'></c:url>"
+										title="Chăm Sóc Da"> <i class="fa fa-angle-right"
+											aria-hidden="true"></i> Chăm Sóc Da
 									</a>
 										<ul class="ul-non ul-childs">
-											<li><a href="?page=classify&id=26" title="Làm sạch da "
+											<li><a href="<c:url value= '/classify/26'></c:url>" title="Làm sạch da "
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Làm sạch da
 											</a></li>
-											<li><a href="?page=classify&id=29" title="Dưỡng da "
+											<li><a href="<c:url value= '/classify/29'></c:url>" title="Dưỡng da "
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Dưỡng da
 											</a></li>
-											<li><a href="?page=classify&id=20" title="Mask - Mặt nạ"
+											<li><a href="<c:url value= '/classify/20'></c:url>" title="Mask - Mặt nạ"
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Mask - Mặt nạ
 											</a></li>
 										</ul></li>
-									<li class=" "><a href="" title="Chăm Sóc Tóc"> <i
-											class="fa fa-angle-right" aria-hidden="true"></i> Chăm Sóc
-											Tóc
+									<li class=" "><a
+										href="<c:url value= '/category/3'></c:url>"
+										title="Chăm Sóc Tóc"> <i class="fa fa-angle-right"
+											aria-hidden="true"></i> Chăm Sóc Tóc
 									</a>
 										<ul class="ul-non ul-childs">
-											<li><a href="?page=classify&id=38" title="Dầu gội "
+											<li><a href="<c:url value= '/classify/38'></c:url>" title="Dầu gội "
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Dầu gội
 											</a></li>
-											<li><a href="?page=classify&id=39" title="Dầu xả"
+											<li><a href="<c:url value= '/classify/39'></c:url>" title="Dầu xả"
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Dầu xả
 											</a></li>
-											<li><a href="?page=classify&id=41" title="Kem ủ tóc"
+											<li><a href="<c:url value= '/classify/41'></c:url>" title="Kem ủ tóc"
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Kem ủ tóc
 											</a></li>
-											<li><a href="?page=classify&id=40" title="Dầu gội khô"
+											<li><a href="<c:url value= '/classify/40'></c:url>" title="Dầu gội khô"
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Dầu gội khô
 											</a></li>
-											<li><a href="?page=classify&id=42"
+											<li><a href="<c:url value= '/classify/42'></c:url>"
 												title="Serum dưỡng tóc" class=""> <i
 													class="fa fa-caret-right" aria-hidden="true"></i> Serum
 													dưỡng tóc
 											</a></li>
-											<li><a href="?page=classify&id=37" title="Set dưỡng tóc"
+											<li><a href="?p<c:url value= '/classify/37'></c:url>" title="Set dưỡng tóc"
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Set dưỡng tóc
 											</a></li>
 										</ul></li>
-									<li class=" "><a href="" title="Phụ Kiện"> <i
-											class="fa fa-angle-right" aria-hidden="true"></i> Phụ Kiện
+									<li class=" "><a
+										href="<c:url value= '/category/4'></c:url>"
+										title="Phụ Kiện"> <i class="fa fa-angle-right"
+											aria-hidden="true"></i> Phụ Kiện
 									</a>
 										<ul class="ul-non ul-childs">
-											<li><a href="?page=classify&id=43"
+											<li><a href="<c:url value= '/classify/43'></c:url>"
 												title="Dụng cụ trang điểm" class=""> <i
 													class="fa fa-caret-right" aria-hidden="true"></i> Dụng cụ
 													trang điểm
 											</a></li>
-											<li><a href="?page=classify&id=44"
+											<li><a href="?<c:url value= '/classify/44'></c:url>"
 												title="Phụ kiện làm đẹp" class=""> <i
 													class="fa fa-caret-right" aria-hidden="true"></i> Phụ kiện
 													làm đẹp
 											</a></li>
-											<li><a href="?page=classify&id=45"
+											<li><a href="<c:url value= '/classify/45'></c:url>"
 												title="Sơn móng - Rửa móng" class=""> <i
 													class="fa fa-caret-right" aria-hidden="true"></i> Sơn móng
 													- Rửa móng
 											</a></li>
 										</ul></li>
-									<li class=" "><a href="" title="Nước Hoa"> <i
-											class="fa fa-angle-right" aria-hidden="true"></i> Nước Hoa
+									<li class=" "><a
+										href="<c:url value= '/category/5'></c:url>"
+										title="Nước Hoa"> <i class="fa fa-angle-right"
+											aria-hidden="true"></i> Nước Hoa
 									</a>
 										<ul class="ul-non ul-childs">
-											<li><a href="?page=classify&id=47" title="Nước hoa nữ "
+											<li><a href="<c:url value= '/classify/47'></c:url>" title="Nước hoa nữ "
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Nước hoa nữ
 											</a></li>
-											<li><a href="?page=classify&id=48" title="Nước hoa nam"
+											<li><a href="<c:url value= '/classify/48'></c:url>" title="Nước hoa nam"
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Nước hoa nam
 											</a></li>
-											<li><a href="?page=classify&id=49" title="Xịt thơm body"
+											<li><a href="<c:url value= '/classify/49'></c:url>" title="Xịt thơm body"
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Xịt thơm body
 											</a></li>
 										</ul></li>
-									<li class=" "><a href="" title="Chăm Sóc Toàn Thân"> <i
-											class="fa fa-angle-right" aria-hidden="true"></i> Chăm Sóc
-											Toàn Thân
+									<li class=" "><a
+										href="<c:url value= '/category/6'></c:url>"
+										title="Chăm Sóc Toàn Thân"> <i class="fa fa-angle-right"
+											aria-hidden="true"></i> Chăm Sóc Toàn Thân
 									</a>
 										<ul class="ul-non ul-childs">
-											<li><a href="?page=classify&id=51" title="Sữa tắm"
+											<li><a href="<c:url value= '/classify/51'></c:url>" title="Sữa tắm"
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Sữa tắm
 											</a></li>
-											<li><a href="?page=classify&id=52"
+											<li><a href="<c:url value= '/classify/52'></c:url>"
 												title="Kem dưỡng toàn  thân - Body Cream" class=""> <i
 													class="fa fa-caret-right" aria-hidden="true"></i> Kem dưỡng
 													toàn thân - Body Cream
 											</a></li>
-											<li><a href="?page=classify&id=53" title="Dưỡng da tay"
+											<li><a href="<c:url value= '/classify/53'></c:url>" title="Dưỡng da tay"
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Dưỡng da tay
 											</a></li>
-											<li><a href="?page=classify&id=54"
+											<li><a href="<c:url value= '/classify/54'></c:url>"
 												title="Tẩy tế bào chết" class=""> <i
 													class="fa fa-caret-right" aria-hidden="true"></i> Tẩy tế
 													bào chết
 											</a></li>
-											<li><a href="?page=classify&id=55" title="Tẩy lông"
+											<li><a href="<c:url value= '/classify/55'></c:url>" title="Tẩy lông"
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Tẩy lông
 											</a></li>
-											<li><a href="?page=classify&id=56" title="Khử mùi"
+											<li><a href="<c:url value= '/classify/56'></c:url>" title="Khử mùi"
 												class=""> <i class="fa fa-caret-right"
 													aria-hidden="true"></i> Khử mùi
 											</a></li>
-											<li><a href="?page=classify&id=57"
+											<li><a href="<c:url value= '/classify/57'></c:url>"
 												title="Giảm sẹo – Giảm thâm – Giảm nám" class=""> <i
 													class="fa fa-caret-right" aria-hidden="true"></i> Giảm sẹo
 													– Giảm thâm – Giảm nám
 											</a></li>
-											<li><a href="?page=classify&id=58"
+											<li><a href="<c:url value= '/classify/58'></c:url>"
 												title="Chăm sóc răng miệng" class=""> <i
 													class="fa fa-caret-right" aria-hidden="true"></i> Chăm sóc
 													răng miệng
@@ -626,8 +632,7 @@ $('.btn-hea').click(function(){
 												href="<c:url value= "/product/${sanphammoive.ma_Sp }"></c:url>"
 												title=""> <img alt="" class="img-reponsive lazy"
 												data-id="lazy-t0"
-												src="<c:url value="/template/${sanphammoive.img }"></c:url>"
-												style="">
+												src="<c:url value="/template/${sanphammoive.img }"></c:url>">
 											</a>
 										</div>
 										<div class="content-shas">

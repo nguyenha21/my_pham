@@ -579,87 +579,87 @@
 											<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 												<div>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=trademark&id=1">3CE</a></li>
-														<li><a href="?page=trademark&id=2">3W Clinic</a></li>
-														<li><a href="?page=trademark&id=3">A'PIEU</a></li>
-														<li><a href="?page=trademark&id=4">Aritaum</a></li>
-														<li><a href="?page=trademark&id=5">Avene</a></li>
-														<li><a href="?page=trademark&id=6">Bath and body
+														<li><a href="<c:url value= "/trademark/1"></c:url>">3CE</a></li>
+														<li><a href="<c:url value= "/trademark/2"></c:url>">3W Clinic</a></li>
+														<li><a href="<c:url value= "/trademark/3"></c:url>">A'PIEU</a></li>
+														<li><a href="<c:url value= "/trademark/4"></c:url>">Aritaum</a></li>
+														<li><a href="<c:url value= "/trademark/5"></c:url>">Avene</a></li>
+														<li><a href="<c:url value= "/trademark/6"></c:url>">Bath and body
 																works</a></li>
-														<li><a href="?page=trademark&id=7">Benton</a></li>
-														<li><a href="?page=trademark&id=8">Bioderma</a></li>
-														<li><a href="?page=trademark&id=9">Careline</a></li>
-														<li><a href="?page=trademark&id=10">City Color</a></li>
-														<li><a href="?page=trademark&id=11">Cocoon</a></li>
-														<li><a href="?page=trademark&id=12">Covergirl</a></li>
-														<li><a href="?page=trademark&id=13">DHC</a></li>
-														<li><a href="?page=trademark&id=14">Dr.Belmeur</a></li>
+														<li><a href="<c:url value= "/trademark/7"></c:url>">Benton</a></li>
+														<li><a href="<c:url value= "/trademark/8"></c:url>">Bioderma</a></li>
+														<li><a href="<c:url value= "/trademark/9"></c:url>">Careline</a></li>
+														<li><a href="<c:url value= "/trademark/10"></c:url>">City Color</a></li>
+														<li><a href="<c:url value= "/trademark/11"></c:url>">Cocoon</a></li>
+														<li><a href="<c:url value= "/trademark/12"></c:url>">Covergirl</a></li>
+														<li><a href="<c:url value= "/trademark/13"></c:url>">DHC</a></li>
+														<li><a href="<c:url value= "/trademark/14"></c:url>">Dr.Belmeur</a></li>
 													</ul>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 												<div>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=trademark&id=15">Etude House</a></li>
-														<li><a href="?page=trademark&id=16">Evoluderm</a></li>
-														<li><a href="?page=trademark&id=17">Hada Labo</a></li>
-														<li><a href="?page=trademark&id=18">Holika Holika
-														</a></li>
-														<li><a href="?page=trademark&id=19">Innisfree</a></li>
-														<li><a href="?page=trademark&id=20">Kose</a></li>
-														<li><a href="?page=trademark&id=21">L.A Girl</a></li>
-														<li><a href="?page=trademark&id=22">LANEIGE KOREA</a></li>
-														<li><a href="?page=trademark&id=23">Lanopearl</a></li>
-														<li><a href="?page=trademark&id=24">L'oreal Paris</a></li>
-														<li><a href="?page=trademark&id=25">MAC</a></li>
-														<li><a href="?page=trademark&id=26">Mamonde</a></li>
-														<li><a href="?page=trademark&id=27">Maybelline</a></li>
-														<li><a href="?page=trademark&id=28">Missha</a></li>
+														<li><a href="<c:url value= "/trademark/15"></c:url>">Etude House</a></li>
+														<li><a href="<c:url value= "/trademark/16"></c:url>">Evoluderm</a></li>
+														<li><a href="<c:url value= "/trademark/17"></c:url>">Hada Labo</a></li>
+														<li><a href="<c:url value= "/trademark/18"></c:url>">Holika Holika
+														</a></li>    
+														<li><a href="<c:url value= "/trademark/19"></c:url>">Innisfree</a></li>
+														<li><a href="<c:url value= "/trademark/20"></c:url>">Kose</a></li>
+														<li><a href="<c:url value= "/trademark/21"></c:url>">L.A Girl</a></li>
+														<li><a href="<c:url value= "/trademark/22"></c:url>">LANEIGE KOREA</a></li>
+														<li><a href="<c:url value= "/trademark/23"></c:url>">Lanopearl</a></li>
+														<li><a href="<c:url value= "/trademark/24"></c:url>">L'oreal Paris</a></li>
+														<li><a href="<c:url value= "/trademark/25"></c:url>">MAC</a></li>
+														<li><a href="<c:url value= "/trademark/26"></c:url>">Mamonde</a></li>
+														<li><a href="<c:url value= "/trademark/27"></c:url>">Maybelline</a></li>
+														<li><a href="<c:url value= "/trademark/28"></c:url>">Missha</a></li>
 													</ul>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 												<div>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=trademark&id=29">Nature
+														<li><a href="<c:url value= "/trademark/29"></c:url>">Nature
 																Republic</a></li>
-														<li><a href="?page=trademark&id=30">Neutrogena</a></li>
-														<li><a href="?page=trademark&id=31">NYX</a></li>
-														<li><a href="?page=trademark&id=32">Ohui </a></li>
-														<li><a href="?page=trademark&id=33">Paula's
+														<li><a href="<c:url value= "/trademark/30"></c:url>">Neutrogena</a></li>
+														<li><a href="<c:url value= "/trademark/31"></c:url>">NYX</a></li>
+														<li><a href="<c:url value= "/trademark/32"></c:url>">Ohui </a></li>
+														<li><a href="<c:url value= "/trademark/33"></c:url>">Paula's
 																Choice</a></li>
-														<li><a href="?page=trademark&id=34">Physician
+														<li><a href="<c:url value= "/trademark/34"></c:url>">Physician
 																Formula</a></li>
-														<li><a href="?page=trademark&id=35">Play Boy </a></li>
-														<li><a href="?page=trademark&id=36">Pony</a></li>
-														<li><a href="?page=trademark&id=37">Rebirth </a></li>
-														<li><a href="?page=trademark&id=38">Revlon</a></li>
-														<li><a href="?page=trademark&id=39">Rimmel</a></li>
-														<li><a href="?page=trademark&id=40">Secret Key</a></li>
-														<li><a href="?page=trademark&id=41">Shiseido</a></li>
-														<li><a href="?page=trademark&id=42">Simple</a></li>
-													</ul>
+														<li><a href="<c:url value= "/trademark/35"></c:url>">Play Boy </a></li>
+														<li><a href="<c:url value= "/trademark/36"></c:url>">Pony</a></li>
+														<li><a href="<c:url value= "/trademark/37"></c:url>">Rebirth </a></li>
+														<li><a href="<c:url value= "/trademark/38"></c:url>">Revlon</a></li>
+														<li><a href="<c:url value= "/trademark/39"></c:url>">Rimmel</a></li>
+														<li><a href="<c:url value= "/trademark/39"></c:url>">Secret Key</a></li>
+														<li><a href="<c:url value= "/trademark/40"></c:url>">Shiseido</a></li>
+														<li><a href="<c:url value= "/trademark/41"></c:url>">Simple</a></li>
+													</ul>            <c:url value= "/trademark/42"></c:url>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 												<div>
 													<ul class="ul-non ul-out">
-														<li><a href="?page=trademark&id=43">Sivanna
+														<li><a href="<c:url value= "/trademark/43"></c:url>">Sivanna
 																Colors</a></li>
-														<li><a href="?page=trademark&id=44">SK - II</a></li>
-														<li><a href="?page=trademark&id=45">Skinfood</a></li>
-														<li><a href="?page=trademark&id=46">StIves</a></li>
-														<li><a href="?page=trademark&id=47">The Body Shop</a></li>
-														<li><a href="?page=trademark&id=48">The Face Shop</a></li>
-														<li><a href="?page=trademark&id=49">Thương Hiệu
+														<li><a href="<c:url value= "/trademark/44"></c:url>">SK - II</a></li>
+														<li><a href="<c:url value= "/trademark/45"></c:url>">Skinfood</a></li>
+														<li><a href="<c:url value= "/trademark/46"></c:url>">StIves</a></li>
+														<li><a href="<c:url value= "/trademark/47"></c:url>">The Body Shop</a></li>
+														<li><a href="<c:url value= "/trademark/48"></c:url>">The Face Shop</a></li>
+														<li><a href="<c:url value= "/trademark/49"></c:url>">Thương Hiệu
 																Khác</a></li>
-														<li><a href="?page=trademark&id=50">Tonymoly</a></li>
-														<li><a href="?page=trademark&id=51">Vacosi</a></li>
-														<li><a href="?page=trademark&id=52">Vichy</a></li>
-														<li><a href="?page=trademark&id=53">Victoria's
+														<li><a href="<c:url value= "/trademark/50"></c:url>">Tonymoly</a></li>
+														<li><a href="<c:url value= "/trademark/51"></c:url>">Vacosi</a></li>
+														<li><a href="<c:url value= "/trademark/52"></c:url>">Vichy</a></li>
+														<li><a href="<c:url value= "/trademark/53"></c:url>">Victoria's
 																Secret</a></li>
-														<li><a href="?page=trademark&id=54">W7 </a></li>
-														<li><a href="?page=trademark&id=55">Yadah </a></li>
+														<li><a href="<c:url value= "/trademark/54"></c:url>">W7 </a></li>
+														<li><a href="<c:url value= "/trademark/55"></c:url>">Yadah </a></li>
 													</ul>
 												</div>
 											</div>

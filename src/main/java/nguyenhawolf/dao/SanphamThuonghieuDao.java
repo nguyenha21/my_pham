@@ -6,11 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import nguyenhawolf.dto.CategorysDto;
-import nguyenhawolf.dto.MpCategorys;
+import nguyenhawolf.dto.TrademarksDto;
+import nguyenhawolf.dto.MpTrademarks;
 
 @Repository
-public class SanphamPhanloaiDao {
+public class SanphamThuonghieuDao {
 
 	@Autowired
 	public JdbcTemplate _jdbcTemplate;
@@ -20,9 +20,9 @@ public class SanphamPhanloaiDao {
 	
 	private StringBuffer SqlString() {
 		StringBuffer  varname1 = new StringBuffer();
-		varname1.append("SELECT sanpham.*,phanloaisp.*");
+		varname1.append("SELECT sanpham.*,thuonghieu.*");
 		varname1.append(" FROM `sanpham` ");
-		varname1.append(" INNER JOIN phanloaisp ON sanpham.ma_pl = phanloaisp.ma_pl ");
+		varname1.append(" INNER JOIN thuonghieu ON sanpham.ma_th = thuonghieu.ma_th ");
 		return varname1;
 	}
 
@@ -33,7 +33,7 @@ public class SanphamPhanloaiDao {
 	}
 	private StringBuffer SqlProductsByID(int id) {
 		StringBuffer sql = SqlString();
-		sql.append(" WHERE sanpham.ma_pl = "+id+" AND sanpham.sl_trong_kho > 0 AND sanpham.hien_thi = 1 ");
+		sql.append(" WHERE thuonghieu.ma_th = "+id+" AND sanpham.sl_trong_kho > 0 AND sanpham.hien_thi = 1 ");
 		return sql;
 	}
 	
@@ -44,19 +44,19 @@ public class SanphamPhanloaiDao {
 	}
 
 
-	public List<CategorysDto> GetDataProducts() {
+	public List<TrademarksDto> GetDataProducts() {
 		String sql = SqlProducts(YES, NO);
-		List<CategorysDto> listProducts = _jdbcTemplate.query(sql, new MpCategorys());
+		List<TrademarksDto> listProducts = _jdbcTemplate.query(sql, new MpTrademarks());
 		return listProducts;
 	}
-	public List<CategorysDto> GetAllProductsByID(int id) {
+	public List<TrademarksDto> GetAllProductsByID(int id) {
 		String sql = SqlProductsByID(id).toString();
-		List<CategorysDto> listProducts = _jdbcTemplate.query(sql, new MpCategorys());
+		List<TrademarksDto> listProducts = _jdbcTemplate.query(sql, new MpTrademarks());
 		return listProducts;
 	}
-	public List<CategorysDto> GetDataProductsByPaginate(int id,int start,int totalPage) {
+	public List<TrademarksDto> GetDataProductsByPaginate(int id,int start,int totalPage) {
 		String sql = SqlProductsByPaginate(id, start,  totalPage);
-		List<CategorysDto> listProducts = _jdbcTemplate.query(sql, new MpCategorys());
+		List<TrademarksDto> listProducts = _jdbcTemplate.query(sql, new MpTrademarks());
 		return listProducts;
 	}
 

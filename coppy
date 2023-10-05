@@ -8,7 +8,9 @@
    <fmt:formatNumber value="${}" type="currency" currencySymbol="₫" />
 
    format ảnh
-   <c:url value="/template/${topbanchay.img }"></c:url>
+   <c:url value="/template/${productPaginate.img }"></c:url>
+<c:url value= '/classify/1'></c:url>
+<c:url value= '/category/1'></c:url>
 
 
    public JdbcTemplate _jdbcTemplate;
@@ -20,9 +22,9 @@
 
     WHERE sanpham.sl_trong_kho > 0 AND sanpham.hien_thi = 1
 
-    <fmt:formatNumber value="${topbanchay.gia_Ban}" type="currency" currencySymbol="₫" />
+    <fmt:formatNumber value="${productPaginate.gia_Ban}" type="currency" currencySymbol="₫" />
 
-    <fmt:formatNumber value="${topbanchay.gia_Thi_Truong}" type="currency" currencySymbol="₫" />
+    <fmt:formatNumber value="${productPaginate.gia_Thi_Truong}" type="currency" currencySymbol="₫" />
 
     <c:forEach var="chitietsanpham" items="${chitietsanpham }">
         <c:url value='/template/images/products/24-07-2020/logo.png'/>
@@ -31,4 +33,4 @@
     <fmt:formatNumber value="${chitietsanpham.gia_Thi_Truong}" type="currency" currencySymbol="₫" /></c:forEach>
 
 
-    <c:url value= "/product/${sanphamcungloai.ma_Sp }"></c:url>
+    <c:url value= "/product/${productPaginate.ma_Sp }"></c:url>

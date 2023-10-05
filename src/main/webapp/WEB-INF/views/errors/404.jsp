@@ -10,5 +10,6 @@
 <body>
 <h1>Trang không tồn tại</h1>
 <a href="<c:url value="/" ></c:url>">Quay lại trang chủ</a>
+<c:redirect url="/"></c:redirect>
 </body>
 </html>

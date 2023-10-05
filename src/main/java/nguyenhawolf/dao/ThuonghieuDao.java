@@ -20,4 +20,10 @@ public class ThuonghieuDao {
 		list = _jdbcTemplate.query(sql, new MpThuonghieu());
 		return list;
 	}
+	public List<ThuongHieu> GetThuonghieuByID(int ma_th) {
+		List<ThuongHieu> list = new ArrayList<ThuongHieu>();
+		String sql = "SELECT * FROM thuonghieu WHERE ma_th = "+ma_th;
+		list = _jdbcTemplate.query(sql, new MpThuonghieu());
+		return list;
+	}
 }

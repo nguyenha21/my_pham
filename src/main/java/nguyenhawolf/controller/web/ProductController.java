@@ -20,19 +20,19 @@ public class ProductController extends BaseController {
 	public HomeServiceImpl homeServiceImpl;
 	@RequestMapping(value = {"product/{id}"})
 	public ModelAndView Category(@PathVariable String id) {
+		List<ProductsDto> products = productServiceImpl.GetSanphamChitiet(id.toString());
+        if (products == null || products.isEmpty()) {   
+            _mavShare.setViewName("redirect:/trang-chu");
+        } else {
 		_mavShare.addObject("imgspbs",productServiceImpl.GetImgBosung(id.toString()));
 		_mavShare.addObject("sanphamdexuat",productServiceImpl.GetSanphamDexuat());
 		_mavShare.addObject("sanphammoive",homeServiceImpl.GetSanphamMoive());
 		_mavShare.addObject("chitietsanpham",productServiceImpl.GetSanphamChitiet(id.toString()));
-		List<ProductsDto> product = productServiceImpl.GetSanphamChitiet(id.toString());
-		if (product != null) {
-			System.out.println("Dữ liệu trả về: " + product); // In ra giá trị datat
-		} else {
-		    // Xử lý trường hợp không tìm thấy sản phẩm
-		}
+		
 		String ma_pl = "2";
 		_mavShare.addObject("sanphamcungloai",productServiceImpl.GetSanphamCungloai(ma_pl.toString()));
 		_mavShare.setViewName("web/main_san_pham");
+		}	
 		return _mavShare;
 	}
 
