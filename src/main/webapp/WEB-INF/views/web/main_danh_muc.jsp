@@ -100,9 +100,9 @@
 																src="<c:url value="/template/${productPaginate.img }"></c:url>"
 																style="">
 															</a>
-															<button type="button"
-																onclick="load_cart(${productPaginate.ma_Sp })"
-																class="btn-addlike ">
+															<button data-id="${productPaginate.ma_Sp }" type="button"
+																
+																class="btn-addlike">
 																<i class="fa fa-cart-plus"></i>
 															</button>
 															<div class="sale-off hide">

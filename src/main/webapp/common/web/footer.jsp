@@ -18,14 +18,15 @@
 							<span>HỆ THỐNG CỬA HÀNG</span>
 							<hr>
 							<ul class="ul-non ul-info">
-							<c:forEach var="hethongcuahang" items="${hethongcuahang }">
-								<li><a href="" onclick=""> <b> <i
-											class="fa fa-map-marker" aria-hidden="true"></i> ${hethongcuahang.diaChi }
-									</b> - ${hethongcuahang.sdt }
-										<div class="map-mages img-luna"></div>
-								</a></li>
-							</c:forEach>
-							
+								<c:forEach var="hethongcuahang" items="${hethongcuahang }">
+									<li><a href="" onclick=""> <b> <i
+												class="fa fa-map-marker" aria-hidden="true"></i>
+												${hethongcuahang.diaChi }
+										</b> - ${hethongcuahang.sdt }
+											<div class="map-mages img-luna"></div>
+									</a></li>
+								</c:forEach>
+
 							</ul>
 						</div>
 					</div>
@@ -154,23 +155,82 @@
 	</footer>
 </body>
 <script type="text/javascript">
-$(document).ready(function(){
-	$('.owl-carousel').owlCarousel({
-		loop : false,
-		margin : 10,
-		nav : false,
-		responsive : {
-			0 : {
-				items : 2
-			},
-			600 : {
-				items : 4
-			},
-			1000 : {
-				items : 4
+	$(document).ready(function() {
+		$('.owl-carousel').owlCarousel({
+			loop : false,
+			margin : 10,
+			nav : false,
+			responsive : {
+				0 : {
+					items : 2
+				},
+				600 : {
+					items : 4
+				},
+				1000 : {
+					items : 4
+				}
 			}
-		}
+		});
 	});
-});
 </script>
+<script>
+	/* $(".btn-addlike").click(function() {
+		var id = $(this).data("id");
+		$.ajax({
+			type : "POST",
+			url : "AddCart/" + id,
+			dataType:"json",
+			success : function(response) {
+				var elementCount = $(response).length;
+				/* $("#result0").html(elementCount); */
+				/* alert("Thêm vào giỏ hàng thành công!"); 
+				console.log("Dữ liệu từ máy chủ: " + response);
+
+			},
+			error : function() {
+				alert("Đã xảy ra lỗi khi thêm vào giỏ hàng!");
+			}
+		});
+	}); */
+	 $(".btn-addlike").click(function() {
+	        var id = $(this).data("id");
+	        $.ajax({
+	            type : "POST",
+	            url : "AddCart/" + id,
+	            dataType : "json", // Đặt kiểu dữ liệu bạn mong đợi (JSON)
+	            success : function(response) {
+	                // Cập nhật số lượng sản phẩm trên trang web
+	                $("#result0").text(response);
+	                $("#result1").text(response);
+	                $("#result2").text(response);
+	                alert("Thêm vào giỏ hàng thành công!");
+	                //console.log("Dữ liệu từ máy chủ: " + url);
+	            },
+	            error : function() {
+	                alert("Đã xảy ra lỗi khi thêm vào giỏ hàng!");
+	            }
+	        });
+	    });
+	$("#themvaogiohang").click(function() {
+        var id = $(this).data("id");
+        $.ajax({
+            type : "POST",
+            url : "AddCart/" + id,
+            dataType : "json", // Đặt kiểu dữ liệu bạn mong đợi (JSON)
+            success : function(response) {
+                // Cập nhật số lượng sản phẩm trên trang web
+                $("#result0").text(response);
+                $("#result1").text(response);
+                $("#result2").text(response);
+                alert("Thêm vào giỏ hàng thành công!");
+                //console.log("Dữ liệu từ máy chủ: " + url);
+            },
+            error : function() {
+                alert("Đã xảy ra lỗi khi thêm vào giỏ hàng!");
+            }
+        });
+    });
+</script>
+
 </html>

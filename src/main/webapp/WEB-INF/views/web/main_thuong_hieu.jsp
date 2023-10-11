@@ -92,7 +92,7 @@
 																style="">
 															</a>
 															<button type="button"
-																onclick="load_cart(${productPaginate.ma_Sp })"
+																data-id="${productPaginate.ma_Sp }"
 																class="btn-addlike ">
 																<i class="fa fa-cart-plus"></i>
 															</button>

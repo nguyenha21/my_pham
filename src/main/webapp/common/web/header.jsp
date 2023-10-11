@@ -10,6 +10,10 @@
 
 </head>
 <body>
+<c:forEach var="cookie" items="${cookie }">
+<h1>${cart }</h1>
+</c:forEach>
+
 
 	<header>
 		<div class="head-first">
@@ -204,9 +208,9 @@
 										aria-hidden="true"></i> Yêu thích <span id="numberLike"
 										data-id="0">0</span>
 								</a></li>
-								<li><a href="./?page=cart" class="shop_cart"
+								<li><a href="<c:url value= "/gio-hang"></c:url>" class="shop_cart"
 									title="Giỏ hàng"> <i class="fa fa-shopping-cart "></i> Giỏ
-										hàng <span id="result0">3</span>
+										hàng <span id="result0">${Cart.size() }</span>
 								</a></li>
 							</ul>
 						</div>
@@ -222,7 +226,7 @@
 						<div class="box-menu">
 							<div class="hidden-md ">
 								<ul class="ul-non menu-mb">
-									<li><a href="./?page=cart" class="shop_cart_mb"
+									<li><a href="<c:url value= "/gio-hang"></c:url>" class="shop_cart_mb"
 										title="Giỏ hàng"> <i class="fa fa-shopping-cart "></i> <span
 											id="result1">3</span>
 									</a></li>
@@ -697,8 +701,8 @@
 															});
 										</script>
 									</div></li>
-								<li><a href="./?page=cart"> <i
-										class="fa fa-shopping-cart " id="result2">3</i>
+								<li><a href="<c:url value= "/gio-hang"></c:url>"> <i
+										class="fa fa-shopping-cart " id="result2">${Cart.size() }</i>
 								</a></li>
 							</ul>
 							<ul class="ul-non ul-menu-lagi hidden-md" id="ul-megaloger-mb">

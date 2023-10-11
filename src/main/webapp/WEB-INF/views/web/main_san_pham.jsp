@@ -214,10 +214,8 @@
 												<div class="box-add">
 													
 													<div class="bst">
-														<button type="button" class="btn-bts btn-atc"
-															onclick="load_cart(<c:forEach var="chitietsanpham" items="${chitietsanpham }">
-														        ${chitietsanpham.ma_Sp }
-														    </c:forEach>)">
+														<button type="button" class="btn-bts btn-atc " id="themvaogiohang" data-id="<c:forEach var="chitietsanpham" items="${chitietsanpham }">${chitietsanpham.ma_Sp }</c:forEach>"
+															>
 															<i class="fa fa-shopping-cart"></i> Thêm giỏ hàng
 														</button>
 														<button type="button" class="btn-bts btn-hea"
@@ -291,7 +289,7 @@ $('.btn-hea').click(function(){
 													style="opacity: 1;">
 												</a>
 												<button type="button"
-													onclick="load_cart(${sanphamdexuat.ma_Sp })"
+													data-id="${sanphamdexuat.ma_Sp }"
 													class="btn-addlike ">
 													<i class="fa fa-cart-plus"></i>
 												</button>
@@ -350,7 +348,7 @@ $('.btn-hea').click(function(){
 														style="opacity: 1;">
 													</a>
 													<button type="button"
-														onclick="load_cart(${sanphamcungloai.ma_Sp})"
+															data-id="${sanphamcungloai.ma_Sp }"
 														class="btn-addlike ">
 														<i class="fa fa-cart-plus"></i>
 													</button>

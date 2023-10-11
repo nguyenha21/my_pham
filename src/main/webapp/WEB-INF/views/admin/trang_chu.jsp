@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+<h1>${user }</h1>
 	<h1>trang admin</h1>
 </body>
 

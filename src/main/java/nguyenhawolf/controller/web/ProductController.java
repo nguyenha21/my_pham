@@ -12,7 +12,7 @@ import nguyenhawolf.dto.ProductsDto;
 import nguyenhawolf.service.web.HomeServiceImpl;
 import nguyenhawolf.service.web.ProductServiceImpl;
 
-@Controller
+@Controller(value = "productController")
 public class ProductController extends BaseController {
 	@Autowired
 	public ProductServiceImpl productServiceImpl;
@@ -33,6 +33,7 @@ public class ProductController extends BaseController {
 		_mavShare.addObject("sanphamcungloai",productServiceImpl.GetSanphamCungloai(ma_pl.toString()));
 		_mavShare.setViewName("web/main_san_pham");
 		}	
+       
 		return _mavShare;
 	}
 

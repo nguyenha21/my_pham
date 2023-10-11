@@ -3,7 +3,7 @@
    <c:url value='/template/images/products/24-07-2020/logo.png'/>
    images/products/24-07-2020/6.png
 
-
+<%@ include file="/common/taglib.jsp"%>
    format giá 
    <fmt:formatNumber value="${}" type="currency" currencySymbol="₫" />
 
@@ -34,3 +34,19 @@
 
 
     <c:url value= "/product/${productPaginate.ma_Sp }"></c:url>
+
+
+
+
+
+
+
+
+
+
+
+
+    List<TrademarksDto> products = trademarkServiceImpl.GetAllProductsByID(Integer.parseInt(ma_th));
+        if (products == null || products.isEmpty()) {   
+            _mavShare.setViewName("redirect:/trang-chu");
+        } else {

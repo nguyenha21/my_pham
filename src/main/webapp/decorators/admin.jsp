@@ -3,23 +3,21 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="UTF-8">
-<title>Trang chủ</title>
+<c:set var="pageTitle" value="Đăng nhập" />
+<title><c:out value="${pageTitle}" /></title>
 
-<!-- Custom fonts for this template-->
-<link href="<c:url value='/template/admin/vendor/fontawesome-free/css/all.min.css'/>" rel="stylesheet" type="text/css">
+<dec:head>
 
-<!-- Page level plugin CSS-->
-<link href="<c:url value='/template/admin/vendor/datatables/dataTables.bootstrap4.css'/>" rel="stylesheet" type="text/css">
 
-<!-- Custom styles for this template-->
-<link href="<c:url value='/template/admin/css/sb-admin.css'/>" rel="stylesheet" type="text/css">
-
+</dec:head>
 </head>
 <body id="page-top">
-
-<%-- 	<%@ include file="/common/admin/header.jsp" %> --%>
+<%-- 	<c:if test="${user != null}">
+	<%@ include file="/common/web/header.jsp"%>
+	</c:if> --%>
 
 	<dec:body/>
 	

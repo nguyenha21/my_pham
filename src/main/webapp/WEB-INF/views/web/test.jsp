@@ -71,7 +71,7 @@
 												src="<c:url value="/template/${spmoive.img }"></c:url>"
 												style="opacity: 1;">
 											</a>
-											<button type="button" onclick="load_cart(${spmoive.ma_Sp })"
+											<button type="button" 
 												class="btn-addlike ">
 												<i class="fa fa-cart-plus"></i>
 											</button>

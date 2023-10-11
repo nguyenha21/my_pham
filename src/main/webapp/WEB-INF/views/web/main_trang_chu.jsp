@@ -66,8 +66,9 @@
 												src="<c:url value="/template/${spmoive.img }"></c:url>"
 												style="opacity: 1;">
 											</a>
-											<button type="button" onclick="load_cart(${spmoive.ma_Sp })"
-												class="btn-addlike ">
+											
+											<button data-id="${spmoive.ma_Sp }" type="button" 
+												class="btn-addlike">
 												<i class="fa fa-cart-plus"></i>
 											</button>
 											<div class="sale-off hide">
@@ -140,7 +141,7 @@ $(document).ready(function(){
 												src="<c:url value="/template/${topbanchay.img }"></c:url>"
 												style="">
 											</a>
-											<button type="button" onclick="load_cart(${topbanchay.ma_Sp })"
+											<button type="button" data-id="${topbanchay.ma_Sp }" 
 												class="btn-addlike ">
 												<i class="fa fa-cart-plus"></i>
 											</button>
@@ -197,7 +198,7 @@ $(document).ready(function(){
 												<img src="<c:url value="/template/${sanphamtrangdiem.img }"></c:url>"
 												alt="" class="img-reponsive lazy ">
 											</a>
-											<button type="button" onclick="load_cart(${sanphamtrangdiem.ma_Sp})"
+											<button type="button" data-id="${sanphamtrangdiem.ma_Sp }" 
 												class="btn-addlike ">
 												<i class="fa fa-cart-plus"></i>
 											</button>
@@ -260,7 +261,7 @@ $(document).ready(function(){
 												<img src="<c:url value="/template/${sanphamchamsocda.img }"></c:url>"
 												alt="" class="img-reponsive lazy ">
 											</a>
-											<button type="button" onclick="load_cart(${sanphamchamsocda.ma_Sp})"
+											<button type="button" data-id="${sanphamchamsocda.ma_Sp }" 
 												class="btn-addlike ">
 												<i class="fa fa-cart-plus"></i>
 											</button>

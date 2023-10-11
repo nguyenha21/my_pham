@@ -15,6 +15,7 @@ public class SanPhamSSSDao {
 	@Autowired
 	public JdbcTemplate _jdbcTemplate;
 	public List<ProductsDto> GetSanphamChitiet(String id) {
+//		Integer soNguyen = Integer.valueOf(id);
 		List<ProductsDto> list = new ArrayList<ProductsDto>();
 		StringBuffer  varname1 = new StringBuffer();
 		varname1.append("SELECT sanpham.*,gioithieusp.*,thuonghieu.*,phanloaisp.* ");

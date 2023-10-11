@@ -21,6 +21,21 @@ public class MpDonhang implements RowMapper<DonHang>{
         donHang.setNgayShipHt(rs.getTimestamp("ngay_ship_ht"));
         donHang.setNgayHuy(rs.getTimestamp("ngay_huy"));
         donHang.setTrangThai(rs.getInt("trang_thai"));
+        
+        
+        donHang.setMaSp(rs.getInt("masp"));
+        donHang.setSoLuong(rs.getInt("soluong"));
+        donHang.setGiaTien(rs.getInt("giatien"));
+        
+        donHang.setId(rs.getInt("id"));
+        donHang.setHoVaTen(rs.getString("hovaten"));
+        donHang.setGioiTinh(rs.getInt("gioitinh"));
+        donHang.setNgaySinh(rs.getDate("ngaysinh"));
+        donHang.setSdt(rs.getString("sdt"));
+        donHang.setDiaChi(rs.getString("diachi"));
+        donHang.setEmail(rs.getString("email"));
+
+
         return donHang;
 	}
 

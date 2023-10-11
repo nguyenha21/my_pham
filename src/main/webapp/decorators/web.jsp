@@ -12,6 +12,9 @@
 <link href="<c:url value='/template/web/public/css/category.css'/>" rel="stylesheet" type="text/css">
 <link href="<c:url value='/template/web/public/css/easyzoom.css'/>" rel="stylesheet" type="text/css">
 <script src="<c:url value='/template/web/public/js/easyzoom.js'/>"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <!-- phân trang -->
 <style>
 .phantrang {
@@ -79,7 +82,26 @@
 	background-color: #199427;
 }
 </style>
-
+<style type="text/css">
+	#box{
+		width: 500px;
+		margin: 0 auto;
+		/*background: red;*/
+	}
+	#box .hea {
+		width: 100px;
+		margin: 0 auto;
+		color: #199427;
+		font-size: 100px;
+	}
+	#box p {
+		font-size: 15px;
+		text-align: center;
+	}
+	#box span{
+		color: red;
+	}
+</style>
 
 	<link rel="stylesheet" type="text/css" href="<c:url value='/template/web/public/css/site.min.css'/>">
        <link rel="stylesheet" type="text/css" href="<c:url value='/template/web/public/css/style.css'/>">

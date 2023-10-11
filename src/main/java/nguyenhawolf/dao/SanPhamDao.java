@@ -62,6 +62,13 @@ public class SanPhamDao {
 		list = _jdbcTemplate.query(sql, new MpSanpham());
 		return list;
 	}
+	public SanPham FindProductByID(long id) {
+		int intValue = (int) id;
+		String sql = "SELECT * FROM `sanpham` WHERE sanpham.ma_sp = "+intValue;
+		SanPham product = _jdbcTemplate.queryForObject(sql, new MpSanpham());
+		return product;
+	}
+	
 	
 	
 
