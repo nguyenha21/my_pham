@@ -1,6 +1,7 @@
   <link href="<c:url value='/template/web/'/>" rel="stylesheet" type="text/css">
    <script src="<c:url value='/template/web/'/>"></script>
    <c:url value='/template/images/products/24-07-2020/logo.png'/>
+   <c:url value='/template/images/products/24-07-2020/logo.png'/>
    images/products/24-07-2020/6.png
 
 <%@ include file="/common/taglib.jsp"%>
@@ -50,3 +51,76 @@
         if (products == null || products.isEmpty()) {   
             _mavShare.setViewName("redirect:/trang-chu");
         } else {
+
+
+
+
+
+
+
+
+
+
+
+
+          <%--  <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="<c:url value='/template/admin/assets/libs/jquery/dist/jquery.min.js'/>"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="<c:url value='/template/admin/assets/libs/popper.js/dist/umd/popper.min.js'/>"></script>
+    <script src="<c:url value='/template/admin/assets/libs/bootstrap/dist/js/bootstrap.min.js'/>"></script>
+    <!-- apps -->
+    <script src="<c:url value='/template/admin/dist/js/app.min.js'/>"></script>
+    <script src="<c:url value='/template/admin/dist/js/app.init.mini-sidebar.js'/>"></script>
+    <script src="<c:url value='/template/admin/dist/js/app-style-switcher.js'/>"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="<c:url value='/template/admin/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js'/>"></script>
+    <script src="<c:url value='/template/admin/assets/extra-libs/sparkline/sparkline.js'/>"></script>
+    <!--Wave Effects -->
+    <script src="<c:url value='/template/admin/dist/js/waves.js'/>"></script>
+    <!--Menu sidebar -->
+    <script src="<c:url value='/template/admin/dist/js/sidebarmenu.js'/>"></script>
+    <!--Custom JavaScript -->
+    <script src="<c:url value='/template/admin/dist/js/custom.js'/>"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="<c:url value='/template/admin/assets/libs/chartist/dist/chartist.min.js'/>"></script>
+    <script src="<c:url value='/template/admin/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js'/>"></script>
+    <!--c3 charts -->
+    <script src="<c:url value='/template/admin/assets/extra-libs/c3/d3.min.js'/>"></script>
+    <script src="<c:url value='/template/admin/assets/extra-libs/c3/c3.min.js'/>"></script>
+    <script src="<c:url value='/template/admin/dist/js/pages/dashboards/dashboard3.js'/>"></script> --%>
+
+
+
+     <link rel="icon" type="image/png" sizes="16x16" href="<c:url value='/template/admin/assets/images/favicon.png'/>">
+    <title>Nice admin Template - The Ultimate Multipurpose admin template</title>
+    <!-- Custom CSS -->
+    <link href="<c:url value='/template/admin/assets/libs/chartist/dist/chartist.min.css'/>" rel="stylesheet">
+    <link href="<c:url value='/template/admin/assets/extra-libs/c3/c3.min.css'/>" rel="stylesheet">
+    <link href="<c:url value='/template/admin/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css'/>" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="<c:url value='/template/admin/dist/css/style.min.css'/>" rel="stylesheet">
+
+
+
+
+
+    <a href="index.html" class="logo">
+                            <!-- Logo icon -->
+                            <b class="logo-icon">
+                                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                                <!-- Dark Logo icon -->
+                                <img src="<c:url value='/template/admin/assets/images/logo-icon.png'/>" alt="homepage" class="dark-logo" />
+                                <!-- Light Logo icon -->
+                                <img src="<c:url value='/template/admin/assets/images/logo-light-icon.png'/>" alt="homepage" class="light-logo" />
+                            </b>
+                            <!--End Logo icon -->
+                            <!-- Logo text -->
+                            <span class="logo-text">
+                                <!-- dark Logo text -->
+                                <img src="<c:url value='/template/admin/assets/images/logo-text.png'/>" alt="homepage" class="dark-logo" />
+                                <!-- Light Logo text -->
+                                <img src="<c:url value='/template/admin/assets/images/logo-light-text.png'/>" class="light-logo" alt="homepage" />
+                            </span>
+                        </a>
